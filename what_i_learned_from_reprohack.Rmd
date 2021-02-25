@@ -477,7 +477,7 @@ When detailed information is provided about code, software, hardware and impleme
 > "At its most basic, this could be a plain text file that includes a short list of the names and version numbers of the software and other critical tools used for the analysis." 
 
 
-.footnote[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
 
 ---
 
@@ -499,7 +499,7 @@ When detailed information is provided about code, software, hardware and impleme
 👩‍💻 
 > *"Could be easier"*
 
-```{r sessioninfo, echo = FALSE, out.width=500, fig.align='center'}
+```{r sessioninfo, echo = FALSE, out.width=700, fig.align='center'}
 knitr::include_graphics("imagenes/sessioninfo.png")
 ```
 
@@ -517,7 +517,7 @@ example: Install Docker
 ☕   
 > *"This will take some time. Let's go for a coffee"*
 
-```{r docker, echo = FALSE, out.width=500, fig.align='center'}
+```{r docker, echo = FALSE, out.width=700, fig.align='center'}
 knitr::include_graphics("imagenes/docker.png")
 ```
 
