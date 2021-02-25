@@ -84,27 +84,34 @@ class: bottom
 
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-### Choose your own adventure to a reproducible scientific article
+## Choose your own adventure to a reproducible scientific article
 ### **learnings from ReproHack**
 
- Florencia D'Andrea
- .large[Toronto Data Workshop on Reproducibility | Feb 2021
-]
+Florencia D'Andrea
+.large[Toronto Data Workshop on Reproducibility | Feb 2021 ]
 ]
 
 ---
 
-Cover image from: rawpixel.com - www.freepik.es
-
-Link to the slides: bit.ly/
-
-The full citations are at the end
+background-image: url(imagenes/75581.jpg)
+background-size: cover
+class: center
 
 
-.footnote[[Here there are links]()]
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
+
+
+**Link to the slides**: [bit.ly/florencia_toronto](bit.ly/florencia_toronto)
+
+]
+
+
+.footnote[[Cover image from: rawpixel.com - www.freepik.es](www.freepik.es)]
 
 
 ---
+class: center
 Researchers are sharing their code and data
 
 ```{r open_research, echo = FALSE, out.width=700, fig.align = "center"}
@@ -114,26 +121,25 @@ knitr::include_graphics("imagenes/openresearch.jpg")
 
 ---
 
-
-## Now, articles **could be reproduced** by everyone
-
-
+class: middle, center
 
 ```{r circulo, echo = FALSE, out.width=250, fig.align = "center"}
 knitr::include_graphics("imagenes/circulo.png")
 ```
+## More articles with published code and data are accessible and **could be reproduced by everyone**
+
 
 
 
 ---
 
-## Reproducibility = research quality
+## Reproducibility is consider a proof of **Research Quality**...
 
 .pull-up[
 ```{r cd, echo=FALSE, out.width=400, fig.align='center'}
 knitr::include_graphics("imagenes/codecheck.png")
 ```
-.footnote[[Codecheck](https://www.nature.com/articles/d41586-020-02462-7)]
+.footnote[[Codecheck WebPage](https://www.nature.com/articles/d41586-020-02462-7)]
  ]
  
 .pull-down[
@@ -143,11 +149,54 @@ knitr::include_graphics("imagenes/codecheck2.png")
 ]
 
 
+---
+ 
+ 
+ 
+## ... even if it is not the only one
 
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
+ "The fact that an analysis is reproducible does not guarantee the quality, correctness, or validity of the published results."
+
+]
+
+
+.footnote[[Peng *et al.* (2011)](https://science.sciencemag.org/content/334/6060/1226) ]
+ 
+
+---
+
+## The scientific community should learn about **reproducible practises**
+
+
+.pull-left[
+
+Make it easy to share their work 
+
+It will last more time
+
+
+
+]
+
+.pull-right[
+
+
+```{r tools, echo = FALSE, out.width=600}
+knitr::include_graphics("imagenes/researchtools.jpg")
+```
+
+]
+
+
+
+.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 ---
 class: middle, center
 
-## ¿A cultural change?
+## ¿Are we living a cultural **change**?
 
 .pull-left[
 <blockquote class="twitter-tweet" data-lang="ens"><p lang="en" dir="ltr">The advert asks for: 
@@ -165,27 +214,14 @@ The advert asks for:
 
 ]
 
-.footnote[[Twitter ReproHack](https://twitter.com/ReproHack)]
+.footnote[[ReproHack Twitter](https://twitter.com/ReproHack)]
+
+
 
 ---
 
-### Reproducibility is something resposible researchers should know
 
 
-.pull-left[
-
-Make it easy to share their work 
-
-It will last more time
-
-
-
-]
-
-.pull-right[
-
-
-]
 
 
 ---
@@ -207,8 +243,7 @@ knitr::include_graphics("imagenes/reprohack.png")
 
 
 ## Hackathon
-
-#### Authors 
+### Authors 
 
 
 Send their papers with **publicly available associated code and data**
@@ -222,8 +257,7 @@ knitr::include_graphics("imagenes/circulo.png")
 ---
 
 ## Hackathon
-
-#### Participants
+### Participants
 
 Attempt to **reproduce published research** of their choice from a list of proposed 
 
@@ -242,6 +276,9 @@ article + code + data
 ```{r sub_form3, echo = FALSE, out.width=700, fig.align = "center"}
 knitr::include_graphics("imagenes/submited.png")
 ```
+
+
+.footnote[Thanks [Luis Verde](https://twitter.com/LuisDVerde)!]
 
 ---
 
@@ -429,7 +466,7 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 * the software **package versions** installed
 
-.footnote[[The Turing Way Community (2019)](https://the-turing-way.netlify.app/)]
+.footnote[[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/)]
 
 ---
 
@@ -583,7 +620,7 @@ knitr::include_graphics("imagenes/environments.png")
 ```
 
 
-.footnote[[Recreated from The Turing Way Community Book (2019)](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
+.footnote[[*Recreated from* The Turing Way: A Handbook for Reproducible Data Science  (2019)](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
 
 
 
@@ -709,7 +746,7 @@ background-size: cover
 
 **README**
 
-* Stodden, V. (2014). [Online; accessed 27. May 2020]. URL: https://www.edge.org/response-detail/25340.
+* Prana, G.A.A., Treude, C., Thung, F. et al. (2019) [Categorizing the Content of GitHub README Files.](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas) Empir Software Eng 24, 1296–1327 https://doi.org/10.1007/s10664-018-9660-3
 
 * Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
 
@@ -738,17 +775,20 @@ background-size: cover
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 
+**Reproducible Research / Open Science**
+
+* GitBook Bot, Lambert Heller, datawomanHUB, mcancellieri, Bianca Kramer, Tony Ross-Hellauer, … Jon Tennant. (2018, April 4). [Open Science Training Handbook (Version 1.1)](https://book.fosteropenscience.eu/en/). Zenodo. http://doi.org/10.5281/zenodo.1212538
 
 * Marwick, B., Boettiger, C., & Mullen, L. (2018). [Packaging data analytical work reproducibly using R (and friends). The American Statistician 72(1), 80-88.](https://doi.org/10.1080/00031305.2017.1375986)
 
 * [OECD (2015), “Making Open Science a Reality”](https://www.fct.pt/dsi/docs/Making_Open_Science_a_Reality.pdf), OECD Science, Technology and Industry Policy Papers, No. 25,
 OECD Publishing, Paris. http://dx.doi.org/10.1787/5jrs2f963zs1-en
 
-* The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, … Kirstie Whitaker. (2019, March 25). [The Turing Way: A Handbook for Reproducible Data Science (Version v0.0.4). Zenodo. http://doi.org/10.5281/zenodo.3233986](https://the-turing-way.netlify.app/)
-
 * Peng RD (2011), [Reproducible Research in Computational Science. Science 334(6060): 1226–1227](doi:10.1126/science.1213847)
 
-* Prana, G.A.A., Treude, C., Thung, F. et al. (2019) [Categorizing the Content of GitHub README Files.](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas) Empir Software Eng 24, 1296–1327 https://doi.org/10.1007/s10664-018-9660-3
+* Stodden, V. (2014). [Online; accessed 27. May 2020]. URL: https://www.edge.org/response-detail/25340.
+
+* The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, … Kirstie Whitaker. (2019, March 25). [The Turing Way: A Handbook for Reproducible Data Science (Version v0.0.4). Zenodo. http://doi.org/10.5281/zenodo.3233986](https://the-turing-way.netlify.app/)
 
 ]
 
@@ -791,7 +831,7 @@ background-size: cover
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 
-#### Ilustraciones
+#### Illustrations
 
 * The Turing Way Community, & Scriberia. (2020, March 3). Illustrations from the Turing Way book dashes. Zenodo. http://doi.org/10.5281/zenodo.3695300
 
