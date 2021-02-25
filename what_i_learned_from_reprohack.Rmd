@@ -86,7 +86,7 @@ class: bottom
 ### Choose your own adventure to a reproducible scientific article
 ### **learnings from ReproHack**
 
- *Florencia D'Andrea*
+ Florencia D'Andrea
  .large[Toronto Data Workshop on Reproducibility | Feb 2021
 ]
 ]
@@ -105,10 +105,13 @@ The full citations are at the end
 
 ---
 
-#### Software and data available
+#### Open Science
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-#### **Ciencia abierta** práctica de dejar "los resultados primarios de investigaciones financiados con fondos públicos, los artículos y los datos sean accesibles al público en formato digital sin restricciones o con una restricción mínima".]
+
+> to make the primary outputs of publicly funded research results – publications and the research data – publicly accessible in digital format with no or minimal restriction as a means for accelerating research; these efforts are in the interest of enhancing transparency and collaboration, and fostering innovation.
+
+]
 
 
 .footnote[[The Turing Way Community (2019)](https://the-turing-way.netlify.app/reproducible-research/open/open-resources.html) / 
@@ -116,50 +119,22 @@ The full citations are at the end
 
 ---
 
-
-## FAIR Principles
-#### Good practices for the management and administration of scientific data
-
-.pull-left[
-
-```{r research, echo = FALSE, out.width=700, fig.align='center'}
-#knitr::include_graphics("imagenes/FAIRPrinciples.jpg")
+```{r open_research, echo = FALSE, out.width=700, fig.align = "center"}
+knitr::include_graphics("imagenes/openresearch.jpg")
 ```
-]
-.pull-rigth[
-
-
-**"Acceso tan abierto como sea posible, tan cerrado como sea necesario" (abierto por defecto)**
-
-Se requiere claridad y transparencia en torno a las condiciones que rigen el acceso y la reutilización.
-
-]
-
-#### **F**indable | **A**ccesible | **I**nteroperable | **R**eusable
-
-.footnote[
-[Mons *et al.* (2017)](https://content.iospress.com/articles/information-services-and-use/isu824) / [Imagen: The Turing Way Community, & Scriberia. (2020). ](http://doi.org/10.5281/zenodo.3695300)
-]
-
+.footnote[[Imagen: The Turing Way Community, & Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
 
 ---
 
 ## Challenge!
-## Published article with code and data
-Articles can be reproduced!
+#### Articles can be reproduced!
 
-```{r circulo, echo = FALSE, out.width=300, fig.align = "center"}
+Published articles now have code and data
+
+```{r circulo, echo = FALSE, out.width=250, fig.align = "center"}
 knitr::include_graphics("imagenes/circulo.png")
 ```
 
----
-
-## Reproducibility is a value of research
-
-
----
-
-## 
 
 
 ---
@@ -168,14 +143,14 @@ knitr::include_graphics("imagenes/circulo.png")
 
 .pull-up[
 ```{r cd, echo=FALSE, out.width=400, fig.align='center'}
-#knitr::include_graphics("imagenes/codecheck.png")
+knitr::include_graphics("imagenes/codecheck.png")
 ```
 .footnote[[Codecheck](https://www.nature.com/articles/d41586-020-02462-7)]
  ]
  
 .pull-down[
 ```{r cd2, echo=FALSE, out.width=700, fig.align='center'}
-#knitr::include_graphics("imagenes/codecheck2.png")
+knitr::include_graphics("imagenes/codecheck2.png")
 ```
 ]
 
@@ -194,7 +169,11 @@ Have you come across job descriptions asking for such a commitment before?</p>&m
 
 ---
 
-### Reproducibility is something researchers need to know
+### Reproducibility is something researchers should know
+
+
+
+
 
 ---
 
@@ -232,9 +211,17 @@ Attempt to **reproduce published research** of their choice from a list of propo
 
 ## As researcher, I know how a manuscript is organized
 
+
+
+
+
+
+
 ---
 
-## What about code and data?
+class: inverse, center, middle
+
+## How code and data could be organised?
 
 ---
 
@@ -265,8 +252,8 @@ knitr::include_graphics("imagenes/ResearchCompendium.jpg")
 
 Send the article + code + data 
 
-```{r envia_paper, echo = FALSE, out.width=300, fig.align = "center"}
-knitr::include_graphics("imagenes/envia_paper.png")
+```{r circulo2, echo = FALSE, out.width=300, fig.align = "center"}
+knitr::include_graphics("imagenes/circulo.png")
 ```
 
 ---
@@ -280,14 +267,6 @@ Send the article + code + data
 knitr::include_graphics("imagenes/submited.png")
 ```
 
----
-
-
-# We know how a manuscript look like...
-
-```{r paper_luis, echo = FALSE, out.width=200, fig.align = "center"}
-knitr::include_graphics("imagenes/paper_luis.png")
-```
 
 ---
 
@@ -319,23 +298,15 @@ Guide the reviewer to your results
 
 ## What a **readme** should have?
 
-`icon::fontawesome("arrow-right")` General information
+* General information
 
-`icon::fontawesome("arrow-right")` Data and file overview
+* Data and file overview
 
-`icon::fontawesome("arrow-right")` Sharing and access information
+* Sharing and access information
 
-`icon::fontawesome("arrow-right")` Methodological information
+* Methodological information
 
 .footnote[[Guide to writing "readme" style metadata - RESEARCH DATA MANAGEMENT SERVICE GROUP - Cornell University](https://data.research.cornell.edu/content/readme)]
-
-
----
-
-# Example: `rrtools` readme
-
-
-
 
 
 ---
@@ -361,7 +332,7 @@ knitr::include_graphics("imagenes/rc-logo.png")
 
 * **Organize files** according to a prevailing convention.
 
-###  * Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
+* Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
 
 * Specify the environment (+ **reproducibility**).
 
@@ -380,17 +351,9 @@ knitr::include_graphics("imagenes/ResearchCompendium.jpg")
 
 ---
 
-###  * Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
+#####  * Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
 
 
-
-
----
-
-class: inverse 
-
-This information is necessary for a good quality paper
- 
 
 
 ---
@@ -514,16 +477,6 @@ Binder is an open source web service that lets users create sharable, interactiv
 ```{r echo = FALSE}
 knitr::include_graphics("imagenes/collage.png")
 ```
-
----
-
-## What if the link breaks?
-
-
-
-
-
-
 
 ---
 
