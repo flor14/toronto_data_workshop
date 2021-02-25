@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Choose your own adventure to a reproducible scientific article</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Florencia D’Andrea" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <script src="libs/js-cookie/js.cookie.js"></script>
+    <script src="libs/peerjs/peerjs.min.js"></script>
+    <script src="libs/tiny.toast/toast.min.js"></script>
+    <link href="libs/xaringanExtra-broadcast/broadcast.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-broadcast/broadcast.js"></script>
+    <script src="libs/clipboard/clipboard.min.js"></script>
+    <link href="libs/shareon/shareon.min.css" rel="stylesheet" />
+    <script src="libs/shareon/shareon.min.js"></script>
+    <link href="libs/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra-shareagain/shareagain.js"></script>
+    <link href="libs/tachyons/tachyons.min.css" rel="stylesheet" />
+    <script src="libs/xaringanExtra_fit-screen/fit-screen.js"></script>
+    <link href="libs/tile-view/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view/tile-view.js"></script>
+    <meta name="github-repo" content="flor14/rladies-jujuy"/>
+    <meta name="twitter:title" content="Toronto Data Workshop on Reproducibility"/>
+    <meta name="twitter:description" content="Choose your own adventure to a reproducible scientific article: learnings from ReproHack"/>
+    <meta name="twitter:url" content="https://flor14.github.io/rladies-jujuy/presentacion.html?panelset=licencia#1"/>
+    <meta name="twitter:image:src" content="https://res.cloudinary.com/flor/image/upload/v1608248822/jujuy-colores_frmvax.jpg"/>
+    <meta name="twitter:image:alt" content="Florencia D&#39;Andrea February 2021"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@cantoflor_87"/>
+    <meta name="twitter:site" content="@cantoflor_87"/>
+    <meta property="og:title" content="Toronto Data Workshop on Reproducibility"/>
+    <meta property="og:description" content="Choose your own adventure to a reproducible scientific article: learnings from ReproHack"/>
+    <meta property="og:url" content="https://flor14.github.io/rladies-jujuy/presentacion.html?panelset=licencia#1"/>
+    <meta property="og:image" content="https://res.cloudinary.com/flor/image/upload/v1608248822/jujuy-colores_frmvax.jpg"/>
+    <meta property="og:image:alt" content="Florencia D&#39;Andrea February 2021"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_US"/>
+    <meta property="article:author" content="Florencia D&#39;Andrea"/>
+    <script src="libs/htmlwidgets/htmlwidgets.js"></script>
+    <script src="libs/es6shim/es6shim.js"></script>
+    <script src="libs/es7shim/es7shim.js"></script>
+    <script src="libs/graphre/graphre.js"></script>
+    <script src="libs/nomnoml/nomnoml.js"></script>
+    <script src="libs/nomnoml-binding/nomnoml.js"></script>
+    <script src="libs/fitvids/fitvids.min.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+
+background-image: url(imagenes/75581.jpg)
+background-size: cover
+class: bottom
+
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+### Choose your own adventure to a reproducible scientific article
+### **learnings from ReproHack**
+
+ *Florencia D'Andrea*
+ .large[Toronto Data Workshop on Reproducibility | Feb 2021
+]
+]
+
+---
+
+&lt;a href='https://www.freepik.es/vectores/fondo'&gt;Vector de Fondo creado por rawpixel.com - www.freepik.es&lt;/a&gt;
+
+Link to the slides: bit.ly/
+
+The full citations are at the end
+
+
+.footnote[[Here there are links]()]
+
+
+---
+
+#### Software and data available
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+#### **Ciencia abierta** práctica de dejar "los resultados primarios de investigaciones financiados con fondos públicos, los artículos y los datos sean accesibles al público en formato digital sin restricciones o con una restricción mínima".]
+
+
+.footnote[[The Turing Way Community (2019)](https://the-turing-way.netlify.app/reproducible-research/open/open-resources.html) / 
+[OECD (2015)](https://www.fct.pt/dsi/docs/Making_Open_Science_a_Reality.pdf)]
+
+---
+
+
+## FAIR Principles
+#### Good practices for the management and administration of scientific data
+
+.pull-left[
+
+
+]
+.pull-rigth[
+
+
+**"Acceso tan abierto como sea posible, tan cerrado como sea necesario" (abierto por defecto)**
+
+Se requiere claridad y transparencia en torno a las condiciones que rigen el acceso y la reutilización.
+
+]
+
+#### **F**indable | **A**ccesible | **I**nteroperable | **R**eusable
+
+.footnote[
+[Mons *et al.* (2017)](https://content.iospress.com/articles/information-services-and-use/isu824) / [Imagen: The Turing Way Community, &amp; Scriberia. (2020). ](http://doi.org/10.5281/zenodo.3695300)
+]
+
+
+---
+
+## Challenge!
+## Published article with code and data
+Articles can be reproduced!
+
+&lt;img src="imagenes/circulo.png" width="300" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Reproducibility is a value of research
+
+
+---
+
+## 
+
+
+---
+
+## CodeCheck 
+
+.pull-up[
+
+.footnote[[Codecheck](https://www.nature.com/articles/d41586-020-02462-7)]
+ ]
+ 
+.pull-down[
+
+]
+
+---
+class: middle, center
+
+## ¿A cultural change?
+
+&lt;blockquote class="twitter-tweet" data-lang="ens"&gt;&lt;p lang="en" dir="ltr"&gt;The advert asks for: 
+"A commitment to following the best [..] practices in science, such as [..] sharing of computer code and writing reproducible research reports, [..]sharing of data whenever feasible"
+
+Have you come across job descriptions asking for such a commitment before?&lt;/p&gt;&amp;mdash; ReproHack(@ReproHack) &lt;a href="https://twitter.com/ReproHack/status/1296061566484385792?s=20"&gt;19 August 2020&lt;/a&gt;&lt;/blockquote&gt;
+
+
+.footnote[[Twitter ReproHack](https://twitter.com/ReproHack)]
+
+---
+
+### Reproducibility is something researchers need to know
+
+---
+
+### ReproHack!: Learning from the experience
+
+
+---
+
+## **ReproHack**?
+
+
+.pull-left[
+
+&lt;img src="imagenes/reprohack.png" width="250" /&gt;
+
+]
+
+.pull-right[
+
+#### *A hackaton on reproducible data analysis*
+
+Authors
+
+Send their papers with **publicly available associated code and data**
+
+Participants
+
+Attempt to **reproduce published research** of their choice from a list of proposed 
+
+]
+
+---
+
+## As researcher, I know how a manuscript is organized
+
+---
+
+## What about code and data?
+
+---
+
+## Research Compendium
+
+.pull-left[
+
+* **Organize files** according to a prevailing convention.
+
+* Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
+
+* Specify the environment (+ **reproducibility**).
+
+
+]
+
+.pull-right[
+&lt;img src="imagenes/ResearchCompendium.jpg" width="500" /&gt;
+]
+
+.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+
+---
+
+## Authors 
+
+Send the article + code + data 
+
+&lt;img src="imagenes/envia_paper.png" width="300" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Authors 
+
+Send the article + code + data 
+
+
+&lt;img src="imagenes/submited.png" width="700" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# We know how a manuscript look like...
+
+&lt;img src="imagenes/paper_luis.png" width="200" style="display: block; margin: auto;" /&gt;
+
+---
+
+## How data and code is shared?
+
+&lt;img src="imagenes/submited2.png" width="700" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+### This link led us to...
+
+&lt;img src="imagenes/collage.png" width="800" /&gt;
+
+---
+
+class: inverse, center, middle
+
+## **Readme**
+
+Guide the reviewer to your results
+
+
+---
+
+## What a **readme** should have?
+
+`icon::fontawesome("arrow-right")` General information
+
+`icon::fontawesome("arrow-right")` Data and file overview
+
+`icon::fontawesome("arrow-right")` Sharing and access information
+
+`icon::fontawesome("arrow-right")` Methodological information
+
+.footnote[[Guide to writing "readme" style metadata - RESEARCH DATA MANAGEMENT SERVICE GROUP - Cornell University](https://data.research.cornell.edu/content/readme)]
+
+
+---
+
+# Example: `rrtools` readme
+
+
+
+
+
+---
+
+## Paquete `rrtools` 
+#### Compendios de investigación en R
+
+&lt;img src="imagenes/rc-logo.png" width="100" style="display: block; margin: auto;" /&gt;
+
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+[`rrtools`](https://github.com/benmarwick/rrtools) proporciona instrucciones, plantillas y funciones para hacer un compendio básico adecuado para escribir **investigaciones reproducibles con R**.]
+
+.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+
+---
+
+## Research Compendium
+
+.pull-left[
+
+* **Organize files** according to a prevailing convention.
+
+###  * Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
+
+* Specify the environment (+ **reproducibility**).
+
+
+]
+
+.pull-right[
+&lt;img src="imagenes/ResearchCompendium.jpg" width="500" /&gt;
+]
+
+.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+
+
+
+---
+
+###  * Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
+
+
+
+
+---
+
+class: inverse 
+
+This information is necessary for a good quality paper
+ 
+
+
+---
+
+## What I find useful to reproduce the article results? 
+
+1. A clear description of the files/links necessary 
+
+&lt;img src="imagenes/estructura.png" width="800" /&gt;
+
+.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+
+---
+
+## What I find useful to reproduce the article results? 
+
+2. (if necessary) Required software installation steps
+
+&lt;img src="imagenes/steps.png" width="800" /&gt;
+
+.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+
+---
+
+
+&lt;img src="imagenes/paper.png" width="800" /&gt;
+
+
+
+
+
+
+---
+
+class: inverse
+
+### The way you capture the computational environment will change the experience of reproducing the article
+Environment specified (in README)
+
+.footote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
+
+---
+
+## Computational environment
+
+Characteristics of a computer that can affect the behavior of the work done on it, such as:
+
+* your **operating system**
+
+* what **software** do you have installed
+
+* software **package versions** are installed
+
+.footnote[[The Turing Way Community (2019)](https://the-turing-way.netlify.app/)]
+
+---
+
+## Computational environment
+
+&gt; "At its most basic, this could be a plain text file that includes a short list of the names and version numbers of the software and other critical tools used for the analysis." 
+
+
+.footnote[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+
+---
+
+#### A **detailed description** of dependencies and software/hardware used
+
+
+&lt;img src="imagenes/sessioninfo.png" width="800" /&gt;
+
+
+.footnote[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+
+---
+
+## **Installing** software
+
+example: Docker container
+
+&lt;img src="imagenes/ResearchCompendium.jpg" width="500" /&gt;
+
+
+---
+
+## Sharing a **link** to an interactive notebook
+
+example: Binder
+
+&lt;img src="imagenes/ResearchCompendium.jpg" width="500" /&gt;
+
+---
+
+class: inverse, center, middle, 
+
+## ☁💻☁
+### Binder’s goal is to lower the barrier to interactivity, and to allow users to utilize code that is hosted in repository providers such as GitHub
+
+.footnote[[Binder 2.0 - Reproducible, interactive, sharable environments for science at scale](https://pdfs.semanticscholar.org/c043/bef741a9616d1144e0205ac21ceae881485d.pdf)]
+
+
+---
+
+# Binder
+
+Binder is an open source web service that lets users create sharable, interactive, reproducible environments in the cloud.
+
+
+&lt;img src="imagenes/collage.png" width="1773" /&gt;
+
+---
+
+## What if the link breaks?
+
+
+
+
+
+
+
+---
+
+## As author I want to ensure the reproducibility of my work
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+**Computational reproducibility**
+
+When detailed information is provided about code, software, hardware and implementation details. ]
+
+.footnote[[Stodden](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html#:~:text=At%20The%20Turing%20Way%2C%20we,that%20the%20original%20team%20used.&amp;text=Reproducible%3A%20A%20result%20is%20reproducible,consistently%20produces%20the%20same%20answer.)]
+
+
+---
+## Environments
+
+&lt;img src="imagenes/environments.png" width="800" style="display: block; margin: auto;" /&gt;
+
+
+.footnote[[TTW](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
+
+---
+
+## Documentation
+
+Cuanto mas detallada más fácil sería para alguien que no es ducho en las tecnologias que se necesitan para reproducir el articulo
+
+
+
+---
+
+class: middle, inverse, center
+## Did you ever consider that your next scientific article can have not only readers but also **users**?
+
+---
+
+# **{**Definición**}**
+### Software para investigación
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+#### Es que se utiliza para generar, procesar o analizar los resultados para una **publicación** (ya sea en una revista, resumen para congreso, monografía, libro o tesis)
+#### Puede comprender desde unas **pocas líneas de código** (...), hasta un paquete de software desarrollado profesionalmente.]
+
+.footnote[[Hettrick *et al.* (2014)](https://doi.org/10.5281/zenodo.608046)]
+
+
+---
+
+### ReproHack **feedback form**
+
+* Reproducubility
+
+* Reusability
+
+* Documentation
+
+* Transparency
+
+
+---
+
+
+### in general, manuscripts are proofread before being submitted
+### not the same code and data
+
+
+
+---
+
+## This is a lot of work!
+
+&lt;img src="imagenes/CultureShift.jpg" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+.footnote[[Imagen: The Turing Way Community, &amp; Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
+
+
+---
+
+## Hacia la ciencia reproducible
+
+
+---
+
+# .
+.pull-left[
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+## To be or not to be 
+# REPRODUCIBLE
+]
+
+]
+
+.pull-right[
+&lt;img src="imagenes/shakespeare.jpg" width="500" /&gt;
+]
+
+.footnote[[Art by legice](https://www.deviantart.com/legice)]
+
+
+---
+
+
+class: center, middle
+
+
+
+```{=html}
+&lt;div id="htmlwidget-3b8757e1f749879e76f7" style="width:720px;height:504px;" class="nomnoml html-widget"&gt;&lt;/div&gt;
+&lt;script type="application/json" data-for="htmlwidget-3b8757e1f749879e76f7"&gt;{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n# direction: down | center \n#.resaltado: fill=#8f8 title=bold\n[Reproducibilidad] -&gt; [Empírica]\n[Reproducibilidad] -&gt; [&lt;resaltado&gt; Computacional]\n[Reproducibilidad] -&gt; [Estadística]","svg":false},"evals":[],"jsHooks":[]}&lt;/script&gt;
+```
+
+.footnote[[Stodden (2014)](https://www.edge.org/response-detail/25340)]
+
+
+#### Computational reproducibility: When detailed information is provided about code, software, hardware and implementation details.
+
+#### Empirical reproducibility: When detailed information is provided about non-computational empirical scientific experiments and observations. In practice, this is enabled by making the data and details of how it was collected freely available.
+
+#### Statistical reproducibility: When detailed information is provided, for example, about the choice of statistical tests, model parameters, and threshold values. This mostly relates to pre-registration of study design to prevent p-value hacking and other manipulations.
+
+Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.
+
+(Different team, different experimental setup.) The measurement can be obtained with stated precision by a different team, a different measuring system, in a different location on multiple trials. For computational experiments, this means that an independent group can obtain the same result using artifacts which they develop completely independently.
+
+
+
+https://ieeexplore.ieee.org/document/6323581
+
+definitions
+https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html#:~:text=At%20The%20Turing%20Way%2C%20we,that%20the%20original%20team%20used.&amp;text=Reproducible%3A%20A%20result%20is%20reproducible,consistently%20produces%20the%20same%20answer.
+
+---
+
+# ReproHack
+
+&lt;img src="imagenes/reprohack.png" width="200" style="display: block; margin: auto;" /&gt;
+
+[Twitter](https://twitter.com/ReproHack)
+
+[Slack](https://reprohack-autoinvite.herokuapp.com/)
+
+[Email](https://reprohack-autoinvite.herokuapp.com/)
+
+
+---
+
+# ReproHack in [LatinR 2020](https://latin-r.com/blog/reprohack)
+
+[Playlist with 6 talks on reproducibility in Spanish](https://www.youtube.com/playlist?list=PL9-E3cL2KgKliN3DFBWfUAUNXco_NOAMQ)
+
+
+```{=html}
+&lt;div class="shareagain" style="min-width:300px;margin:1em auto;"&gt;
+&lt;iframe src="https://flor14.github.io/latinr-reprohack/index.html#1" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;script&gt;fitvids('.shareagain', {players: 'iframe'});&lt;/script&gt;
+&lt;/div&gt;
+```
+
+---
+
+
+
+
+---
+
+## Thanks to ReproHack Team!
+
+Anna Krystalli 
+Daniela
+Linda
+Riccarda
+Paloma Rojas-Saunero
+
+---
+
+### Recursos para consultar 📚💻
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+* [Canal de YouTube de R-Ladies](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng)
+
+* [R4DS en español - G. Grolemund y H. Wickham ](https://es.r4ds.hadley.nz/)
+
+* [R Markdown: The Definitive Guide - Y. Xie, J. J. Allaire, G. Grolemund](https://bookdown.org/yihui/rmarkdown/)
+
+* [Happy Git With R - J. Bryan, the STAT 545 TAs, J. Hester](https://happygitwithr.com/)
+
+* [Mastering Shiny - H. Wickham](https://mastering-shiny.org/)
+
+* [Become and R package developer! - M. Salmon](hhttps://new-r-dev.netlify.app/)
+
+* [Interactive web-based data visualization with R, plotly, and shiny - C. Sievert](https://plotly-r.com/)
+]
+
+---
+
+class: inverse, center, middle
+
+## References
+
+---
+background-image:  url(imagenes/75581.jpg)
+background-size: cover
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
+**README**
+
+* Stodden, V. (2014). [Online; accessed 27. May 2020]. URL: https://www.edge.org/response-detail/25340.
+
+* Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
+
+* [Webpage Principios FAIR](https://www.go-fair.org/fair-principles/)
+
+* Wickham, H. (2015). [R packages: organize, test, document, and share your code."](https://r-pkgs.org/index.html) O'Reilly Media, Inc."
+
+* Kryvokhyzha D. () [The best free Research Data Repository](https://evodify.com/free-research-repository/)
+]
+
+---
+
+background-image: url(imagenes/75581.jpg)
+background-size: cover
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+* Katz DS, Niemeyer KE, Smith AM, Anderson WL, Boettiger C, Hinsen K, Hooft R, Hucka M, Lee A, Löffler F, Pollard T, Rios F. 2016. [Software vs. data in the context of citation. PeerJ Preprints 4]( https://doi.org/10.7287/peerj.preprints.2630v1)
+
+* Lamprecht, A. L., Garcia, L., Kuzak, M., Martinez, C., Arcila, R., Martin Del Pico, E., ... &amp; McQuilton, P. (2020). Towards FAIR principles for research software. Data Science, 3(1), 37-59.
+
+* [Library Carpentry: FAIR Data and Software](https://librarycarpentry.org/lc-fair-research/)
+
+* Mancini, M., Karakuzu, A., Cohen-Adad, J., Cercignani, M., Nichols, T. E., &amp; Stikov, N. (2020). [An interactive meta-analysis of MRI biomarkers of myelin.](https://elifesciences.org/articles/61523) Elife, 9, e61523.
+
+]
+
+---
+
+background-image: url(imagenes/75581.jpg)
+background-size: cover
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
+
+* Marwick, B., Boettiger, C., &amp; Mullen, L. (2018). [Packaging data analytical work reproducibly using R (and friends). The American Statistician 72(1), 80-88.](https://doi.org/10.1080/00031305.2017.1375986)
+
+* [OECD (2015), “Making Open Science a Reality”](https://www.fct.pt/dsi/docs/Making_Open_Science_a_Reality.pdf), OECD Science, Technology and Industry Policy Papers, No. 25,
+OECD Publishing, Paris. http://dx.doi.org/10.1787/5jrs2f963zs1-en
+
+* The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, … Kirstie Whitaker. (2019, March 25). [The Turing Way: A Handbook for Reproducible Data Science (Version v0.0.4). Zenodo. http://doi.org/10.5281/zenodo.3233986](https://the-turing-way.netlify.app/)
+
+* Peng RD (2011), [Reproducible Research in Computational Science. Science 334(6060): 1226–1227](doi:10.1126/science.1213847)
+]
+
+---
+background-image:  url(imagenes/75581.jpg)
+background-size: cover
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
+* Stodden, V. (2014). [Online; accessed 27. May 2020]. URL: https://www.edge.org/response-detail/25340.
+
+* Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
+
+* [Webpage Principios FAIR](https://www.go-fair.org/fair-principles/)
+
+* Wickham, H. (2015). [R packages: organize, test, document, and share your code."](https://r-pkgs.org/index.html) O'Reilly Media, Inc."
+]
+---
+background-image: url(imagenes/75581.jpg)
+background-size: cover
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+#### Herramientas en R / Charlas
+
+* [Writing articles and reproducible documents R - Anna Quaglieri](https://rpubs.com/annaquagli/471405)
+
+* [Reproducible Environments - RStudio](https://environments.rstudio.com/)
+
+* [renv: Project Environments with R - RStudio blog](https://blog.rstudio.com/2019/11/06/renv-project-environments-for-r/)
+
+* [Putting the R into Reproducible Research - Anna Krystalli](https://annakrystalli.me/talks/r-in-repro-research.html#1)
+
+* [Improve your workflow for reproducible science - Mine Çetinkaya-Rundel](https://mine-cetinkaya-rundel.github.io/improve-repro-workflow-reproducibilitea-2020/slides/improve-repro-workflow-reproducibilitea-2020.pdf) ]
+
+---
+background-image:  url(imagenes/75581.jpg)
+background-size: cover
+
+
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
+#### Ilustraciones
+
+* The Turing Way Community, &amp; Scriberia. (2020, March 3). Illustrations from the Turing Way book dashes. Zenodo. http://doi.org/10.5281/zenodo.3695300
+
+]
+
+
+---
+class: center, middle
+
+## Thank you!
+
+.pull-left[
+#### Dr. Florencia D'Andrea 
+**Postdoctoral Researcher**&lt;br&gt; 
+**Instructora certificada RStudio**&lt;br&gt;
+**Instructora The Carpentries**&lt;br&gt;
+**ReproHack core-team**&lt;br&gt;
+**R-Ladies global team**&lt;br&gt;
+
+&lt;svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; [@flor14]("http://github.com/flor14") &lt;br&gt;
+&lt;svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; [@cantoflor_87]("http://twitter.com/cantoflor_87")&lt;br&gt;
+&lt;svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; [florencia.netlify.app/es-es/]("https://florencia.netlify.app/es-es/")
+]
+
+.pull-right[ 
+&lt;img src="https://res.cloudinary.com/flor/image/upload/v1608466115/template_primary_wahkz0.jpg" width="250" /&gt;
+]
+
+
+
+---
+
+class: center, middle
+
+### Licencia
+
+&lt;a rel="license" href="http://creativecommons.org/licenses/by/4.0/"&gt;&lt;img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /&gt;&lt;/a&gt;&lt;br /&gt;Este obra está bajo una &lt;a rel="license" href="http://creativecommons.org/licenses/by/4.0/"&gt;licencia de Creative Commons Reconocimiento 4.0 Internacional&lt;/a&gt;
+
+---
+background-image:  url(imagenes/75581.jpg)
+background-size: cover
+
+
+---
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
