@@ -89,7 +89,7 @@ The full citations are at the end
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 
-&gt; to make the primary outputs of publicly funded research results – publications and the research data – publicly accessible in digital format with no or minimal restriction as a means for accelerating research; these efforts are in the interest of enhancing transparency and collaboration, and fostering innovation.
+to make the primary outputs of publicly funded research results – publications and the research data – publicly accessible in digital format with no or minimal restriction as a means for accelerating research; these efforts are in the interest of enhancing transparency and collaboration, and fostering innovation.
 
 ]
 
@@ -99,15 +99,17 @@ The full citations are at the end
 
 ---
 
+Researchers are sharing their code and data
+
 &lt;img src="imagenes/openresearch.jpg" width="700" style="display: block; margin: auto;" /&gt;
-.footnote[[Imagen: The Turing Way Community, &amp; Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
+.footnote[[The Turing Way Community, &amp; Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
 
 ---
 
-## Challenge!
-#### Articles can be reproduced!
 
-Published articles now have code and data
+## Articles can now be reproduced
+
+
 
 &lt;img src="imagenes/circulo.png" width="250" style="display: block; margin: auto;" /&gt;
 
@@ -126,16 +128,28 @@ Published articles now have code and data
 &lt;img src="imagenes/codecheck2.png" width="700" style="display: block; margin: auto;" /&gt;
 ]
 
+
+
 ---
 class: middle, center
 
 ## ¿A cultural change?
 
+.pull-left[
 &lt;blockquote class="twitter-tweet" data-lang="ens"&gt;&lt;p lang="en" dir="ltr"&gt;The advert asks for: 
 "A commitment to following the best [..] practices in science, such as [..] sharing of computer code and writing reproducible research reports, [..]sharing of data whenever feasible"
 
 Have you come across job descriptions asking for such a commitment before?&lt;/p&gt;&amp;mdash; ReproHack(@ReproHack) &lt;a href="https://twitter.com/ReproHack/status/1296061566484385792?s=20"&gt;19 August 2020&lt;/a&gt;&lt;/blockquote&gt;
+]
 
+.pull-right[
+
+The advert asks for: 
+"A commitment to following the best [..] practices in science, such as [..] sharing of computer code and writing reproducible research reports, [..]sharing of data whenever feasible"
+
+**Have you come across job descriptions asking for such a commitment before?**
+
+]
 
 .footnote[[Twitter ReproHack](https://twitter.com/ReproHack)]
 
@@ -143,45 +157,35 @@ Have you come across job descriptions asking for such a commitment before?&lt;/p
 
 ### Reproducibility is something researchers should know
 
+Make it easy to share their work 
+
+It will last more time
+
+
+
+
 
 
 
 
 ---
 
-### ReproHack!: Learning from the experience
+class: center, middle, inverse
+## **ReproHack**
+Learning from the experience
 
 
----
-
-## **ReproHack**?
+&lt;img src="imagenes/reprohack.png" width="150" /&gt;
 
 
-.pull-left[
-
-&lt;img src="imagenes/reprohack.png" width="250" /&gt;
-
-]
-
-.pull-right[
-
-#### *A hackaton on reproducible data analysis*
-
-Authors
-
-Send their papers with **publicly available associated code and data**
-
-Participants
-
-Attempt to **reproduce published research** of their choice from a list of proposed 
-
-]
 
 ---
 
-## As researcher, I know how a manuscript is organized
+## As researchers, we know how a manuscript is organized
 
 
+
+&lt;img src="imagenes/paper_luis.png" width="800" /&gt;
 
 
 
@@ -191,7 +195,7 @@ Attempt to **reproduce published research** of their choice from a list of propo
 
 class: inverse, center, middle
 
-## How code and data could be organised?
+## How **code** and **data** could be organised?
 
 ---
 
@@ -216,17 +220,34 @@ class: inverse, center, middle
 
 ---
 
-## Authors 
 
-Send the article + code + data 
+## Hackathon
 
-&lt;img src="imagenes/circulo.png" width="300" style="display: block; margin: auto;" /&gt;
+#### Authors 
+
+
+Send their papers with **publicly available associated code and data**
+
+&lt;img src="imagenes/circulo.png" width="500" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+
+## Hackathon
+
+#### Participants
+
+Attempt to **reproduce published research** of their choice from a list of proposed 
+
+&lt;img src="imagenes/selecciona.png" width="700" style="display: block; margin: auto;" /&gt;
+
 
 ---
 
 ## Authors 
 
-Send the article + code + data 
+article + code + data 
 
 
 &lt;img src="imagenes/submited.png" width="700" style="display: block; margin: auto;" /&gt;
@@ -245,6 +266,10 @@ Send the article + code + data
 
 &lt;img src="imagenes/collage.png" width="800" /&gt;
 
+You should give clear instructions to the reviewers on how to access the material to reproduce 
+
+.footnote[[Check the differences here]()]
+
 ---
 
 class: inverse, center, middle
@@ -262,28 +287,41 @@ Guide the reviewer to your results
 
 * Data and file overview
 
+--
+
 * Sharing and access information
 
 * Methodological information
+
+--
+
+**All of this information is necessary to reproduce the article?**
+
+--
 
 .footnote[[Guide to writing "readme" style metadata - RESEARCH DATA MANAGEMENT SERVICE GROUP - Cornell University](https://data.research.cornell.edu/content/readme)]
 
 
 ---
 
-## Paquete `rrtools` 
-#### Compendios de investigación en R
 
-&lt;img src="imagenes/rc-logo.png" width="100" style="display: block; margin: auto;" /&gt;
+🧭
 
+For example,
+including licenses is important to indicate to another person if the data and code could be reused and how. But reading a license will not give us the steps we must take to reproduce the article.
 
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-[`rrtools`](https://github.com/benmarwick/rrtools) proporciona instrucciones, plantillas y funciones para hacer un compendio básico adecuado para escribir **investigaciones reproducibles con R**.]
-
-.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+--
+## What we need?
 
 ---
 
+## HOW?
+
+&lt;img src="imagenes/categorizing_readmes.png" width="800" /&gt;
+
+.footnote[[Prana *et al.* (2019)](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas)]
+
+---
 ## Research Compendium
 
 .pull-left[
@@ -303,54 +341,63 @@ Guide the reviewer to your results
 
 .footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
 
-
-
 ---
 
-#####  * Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
+#####  **Organize files** according to a prevailing convention.
 
+.pull-left[
+&lt;img src="imagenes/compendio1.png" width="500" /&gt;
+]
 
-
-
----
-
-## What I find useful to reproduce the article results? 
-
-1. A clear description of the files/links necessary 
-
+.pull-right[
 &lt;img src="imagenes/estructura.png" width="800" /&gt;
+]
 
 .footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
-
 ---
 
 ## What I find useful to reproduce the article results? 
 
-2. (if necessary) Required software installation steps
+A clear and detailed description of the files/links necessary and where they are
 
-&lt;img src="imagenes/steps.png" width="800" /&gt;
+
+&lt;img src="imagenes/estructura.png" width="300" /&gt;
+
+&lt;img src="imagenes/estructura.png" width="300" /&gt;
+
+---
+
+##  `rrtools` Package
+#### Research compendiums in R
+
+&lt;img src="imagenes/rc-logo.png" width="100" style="display: block; margin: auto;" /&gt;
+
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+[`rrtools`](https://github.com/benmarwick/rrtools) proporciona instrucciones, plantillas y funciones para hacer un compendio básico adecuado para escribir **investigaciones reproducibles con R**.]
 
 .footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
 
----
-
-
-&lt;img src="imagenes/paper.png" width="800" /&gt;
-
-
-
-
-
 
 ---
 
-class: inverse
+class: inverse, middle, center
 
 ### The way you capture the computational environment will change the experience of reproducing the article
 Environment specified (in README)
 
-.footote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
+.footnote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
 
+---
+
+## As author I want to ensure the reproducibility of my work
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+**Computational reproducibility**
+
+When detailed information is provided about code, software, hardware and implementation details. ]
+
+.footnote[[Stodden](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html#:~:text=At%20The%20Turing%20Way%2C%20we,that%20the%20original%20team%20used.&amp;text=Reproducible%3A%20A%20result%20is%20reproducible,consistently%20produces%20the%20same%20answer.)]
 ---
 
 ## Computational environment
@@ -361,7 +408,7 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 * what **software** do you have installed
 
-* software **package versions** are installed
+* the software **package versions** installed
 
 .footnote[[The Turing Way Community (2019)](https://the-turing-way.netlify.app/)]
 
@@ -381,16 +428,13 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 &lt;img src="imagenes/sessioninfo.png" width="800" /&gt;
 
-
-.footnote[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
-
 ---
 
-## **Installing** software
+## How to **Install** software
 
-example: Docker container
+example: information to run a Docker container
 
-&lt;img src="imagenes/ResearchCompendium.jpg" width="500" /&gt;
+&lt;img src="imagenes/steps.png" width="500" /&gt;
 
 
 ---
@@ -418,18 +462,9 @@ class: inverse, center, middle,
 Binder is an open source web service that lets users create sharable, interactive, reproducible environments in the cloud.
 
 
-&lt;img src="imagenes/collage.png" width="1773" /&gt;
+&lt;img src="imagenes/binder.png" width="1295" /&gt;
 
----
 
-## As author I want to ensure the reproducibility of my work
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-**Computational reproducibility**
-
-When detailed information is provided about code, software, hardware and implementation details. ]
-
-.footnote[[Stodden](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html#:~:text=At%20The%20Turing%20Way%2C%20we,that%20the%20original%20team%20used.&amp;text=Reproducible%3A%20A%20result%20is%20reproducible,consistently%20produces%20the%20same%20answer.)]
 
 
 ---
@@ -440,11 +475,6 @@ When detailed information is provided about code, software, hardware and impleme
 
 .footnote[[TTW](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
 
----
-
-## Documentation
-
-Cuanto mas detallada más fácil sería para alguien que no es ducho en las tecnologias que se necesitan para reproducir el articulo
 
 
 
@@ -455,11 +485,18 @@ class: middle, inverse, center
 
 ---
 
+## Documentation
+
+The more detailed the documentation, the easier it will be for someone who does not know about the technologies used in the article, reproduce it
+
+---
+
 # **{**Definición**}**
 ### Software para investigación
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 #### Es que se utiliza para generar, procesar o analizar los resultados para una **publicación** (ya sea en una revista, resumen para congreso, monografía, libro o tesis)
+
 #### Puede comprender desde unas **pocas líneas de código** (...), hasta un paquete de software desarrollado profesionalmente.]
 
 .footnote[[Hettrick *et al.* (2014)](https://doi.org/10.5281/zenodo.608046)]
@@ -469,20 +506,13 @@ class: middle, inverse, center
 
 ### ReproHack **feedback form**
 
-* Reproducubility
+* Reproducibility ✅
 
-* Reusability
+* Reusability ✅
 
-* Documentation
+* Documentation ✅
 
-* Transparency
-
-
----
-
-
-### in general, manuscripts are proofread before being submitted
-### not the same code and data
+* Transparency ✅
 
 
 
@@ -504,7 +534,7 @@ class: middle, inverse, center
 
 # .
 .pull-left[
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+
 ## To be or not to be 
 # REPRODUCIBLE
 ]
@@ -526,29 +556,12 @@ class: center, middle
 
 
 ```{=html}
-&lt;div id="htmlwidget-4356d63013f00e07cc69" style="width:720px;height:504px;" class="nomnoml html-widget"&gt;&lt;/div&gt;
-&lt;script type="application/json" data-for="htmlwidget-4356d63013f00e07cc69"&gt;{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n# direction: down | center \n#.resaltado: fill=#8f8 title=bold\n[Reproducibilidad] -&gt; [Empírica]\n[Reproducibilidad] -&gt; [&lt;resaltado&gt; Computacional]\n[Reproducibilidad] -&gt; [Estadística]","svg":false},"evals":[],"jsHooks":[]}&lt;/script&gt;
+&lt;div id="htmlwidget-496016652a2600a9a09a" style="width:720px;height:504px;" class="nomnoml html-widget"&gt;&lt;/div&gt;
+&lt;script type="application/json" data-for="htmlwidget-496016652a2600a9a09a"&gt;{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n# direction: down | center \n#.resaltado: fill=#8f8 title=bold\n[Reproducibilidad] -&gt; [Empírica]\n[Reproducibilidad] -&gt; [&lt;resaltado&gt; Computacional]\n[Reproducibilidad] -&gt; [Estadística]","svg":false},"evals":[],"jsHooks":[]}&lt;/script&gt;
 ```
 
 .footnote[[Stodden (2014)](https://www.edge.org/response-detail/25340)]
 
-
-#### Computational reproducibility: When detailed information is provided about code, software, hardware and implementation details.
-
-#### Empirical reproducibility: When detailed information is provided about non-computational empirical scientific experiments and observations. In practice, this is enabled by making the data and details of how it was collected freely available.
-
-#### Statistical reproducibility: When detailed information is provided, for example, about the choice of statistical tests, model parameters, and threshold values. This mostly relates to pre-registration of study design to prevent p-value hacking and other manipulations.
-
-Authors provide all the necessary data and the computer codes to run the analysis again, re-creating the results.
-
-(Different team, different experimental setup.) The measurement can be obtained with stated precision by a different team, a different measuring system, in a different location on multiple trials. For computational experiments, this means that an independent group can obtain the same result using artifacts which they develop completely independently.
-
-
-
-https://ieeexplore.ieee.org/document/6323581
-
-definitions
-https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html#:~:text=At%20The%20Turing%20Way%2C%20we,that%20the%20original%20team%20used.&amp;text=Reproducible%3A%20A%20result%20is%20reproducible,consistently%20produces%20the%20same%20answer.
 
 ---
 
@@ -669,6 +682,9 @@ OECD Publishing, Paris. http://dx.doi.org/10.1787/5jrs2f963zs1-en
 * The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, … Kirstie Whitaker. (2019, March 25). [The Turing Way: A Handbook for Reproducible Data Science (Version v0.0.4). Zenodo. http://doi.org/10.5281/zenodo.3233986](https://the-turing-way.netlify.app/)
 
 * Peng RD (2011), [Reproducible Research in Computational Science. Science 334(6060): 1226–1227](doi:10.1126/science.1213847)
+
+* Prana, G.A.A., Treude, C., Thung, F. et al. (2019) [Categorizing the Content of GitHub README Files.](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas) Empir Software Eng 24, 1296–1327 https://doi.org/10.1007/s10664-018-9660-3
+
 ]
 
 ---
@@ -725,12 +741,8 @@ class: center, middle
 .pull-left[
 #### Dr. Florencia D'Andrea 
 **Postdoctoral Researcher**&lt;br&gt; 
-**Instructora certificada RStudio**&lt;br&gt;
-**Instructora The Carpentries**&lt;br&gt;
-**ReproHack core-team**&lt;br&gt;
-**R-Ladies global team**&lt;br&gt;
 
-&lt;svg viewBox="0 0 496 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"&gt;&lt;/path&gt;&lt;/svg&gt; [@flor14]("http://github.com/flor14") &lt;br&gt;
+
 &lt;svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"&gt;&lt;/path&gt;&lt;/svg&gt; [@cantoflor_87]("http://twitter.com/cantoflor_87")&lt;br&gt;
 &lt;svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"&gt;&lt;/path&gt;&lt;/svg&gt; [florencia.netlify.app/es-es/]("https://florencia.netlify.app/es-es/")
 ]
