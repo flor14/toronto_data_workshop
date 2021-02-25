@@ -124,12 +124,12 @@ Researchers are sharing their code and data
 ```{r open_research, echo = FALSE, out.width=700, fig.align = "center"}
 knitr::include_graphics("imagenes/openresearch.jpg")
 ```
-.footnote[[The Turing Way Community, & Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
+.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]]
 
 ---
 
 
-## Articles can now be reproduced
+## Articles can now **be reproduced** for everyone
 
 
 
@@ -185,15 +185,20 @@ The advert asks for:
 
 ### Reproducibility is something researchers should know
 
+
+.pull-left[
+
 Make it easy to share their work 
 
 It will last more time
 
 
+]
+
+.pull-right[
 
 
-
-
+]
 
 
 ---
@@ -310,13 +315,17 @@ knitr::include_graphics("imagenes/submited2.png")
 knitr::include_graphics("imagenes/collage.png")
 ```
 
-You should give clear instructions to the reviewers on how to access the material to reproduce 
+You should give clear instructions to the reviewers on how to access the material to reproduce no matter where it is stored 
+
 
 .footnote[[Check the differences here]()]
 
 ---
 
 class: inverse, center, middle
+
+
+## 📄
 
 ## **Readme**
 
@@ -348,20 +357,21 @@ Guide the reviewer to your results
 
 ---
 
+class: inverse, middle, center
 
-🧭
+## 🧭
 
 For example,
 including licenses is important to indicate to another person if the data and code could be reused and how. But reading a license will not give us the steps we must take to reproduce the article.
 
 --
-## What we need?
+### What do we need?
 
 ---
 
 ## HOW?
 
-```{r catego, echo = FALSE, out.width=800}
+```{r catego, echo = FALSE, out.width=500}
 knitr::include_graphics("imagenes/categorizing_readmes.png")
 ```
 
@@ -592,32 +602,10 @@ The more detailed the documentation, the easier it will be for someone who does 
 knitr::include_graphics("imagenes/CultureShift.jpg")
 ```
 
-.footnote[[Imagen: The Turing Way Community, & Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
+.footnote[[The Turing Way Community, & Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
 
 
 ---
-
-## Hacia la ciencia reproducible
-
-
----
-
-# .
-.pull-left[
-
-## To be or not to be 
-# REPRODUCIBLE
-]
-
-]
-
-.pull-right[
-```{r shakespeare, echo = FALSE, out.width=500}
-knitr::include_graphics("imagenes/shakespeare.jpg")
-```
-]
-
-.footnote[[Art by legice](https://www.deviantart.com/legice)]
 
 
 ---
