@@ -38,6 +38,8 @@
     <meta property="og:type" content="website"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="article:author" content="Florencia D&#39;Andrea"/>
+    <script src="libs/kePrint/kePrint.js"></script>
+    <link href="libs/lightable/lightable.css" rel="stylesheet" />
     <script src="libs/htmlwidgets/htmlwidgets.js"></script>
     <script src="libs/es6shim/es6shim.js"></script>
     <script src="libs/es7shim/es7shim.js"></script>
@@ -73,7 +75,7 @@ class: bottom
 
 ---
 
-&lt;a href='https://www.freepik.es/vectores/fondo'&gt;Vector de Fondo creado por rawpixel.com - www.freepik.es&lt;/a&gt;
+Cover image from: rawpixel.com - www.freepik.es
 
 Link to the slides: bit.ly/
 
@@ -84,30 +86,15 @@ The full citations are at the end
 
 
 ---
-
-#### Open Science
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-
-to make the primary outputs of publicly funded research results – publications and the research data – publicly accessible in digital format with no or minimal restriction as a means for accelerating research; these efforts are in the interest of enhancing transparency and collaboration, and fostering innovation.
-
-]
-
-
-.footnote[[The Turing Way Community (2019)](https://the-turing-way.netlify.app/reproducible-research/open/open-resources.html) / 
-[OECD (2015)](https://www.fct.pt/dsi/docs/Making_Open_Science_a_Reality.pdf)]
-
----
-
 Researchers are sharing their code and data
 
 &lt;img src="imagenes/openresearch.jpg" width="700" style="display: block; margin: auto;" /&gt;
-.footnote[[The Turing Way Community, &amp; Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]]
+.footnote[[The Turing Way Community, &amp; Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 
 ---
 
 
-## Articles can now **be reproduced** for everyone
+## Now, articles **could be reproduced** by everyone
 
 
 
@@ -117,7 +104,7 @@ Researchers are sharing their code and data
 
 ---
 
-## CodeCheck 
+## Reproducibility = research quality
 
 .pull-up[
 &lt;img src="imagenes/codecheck.png" width="400" style="display: block; margin: auto;" /&gt;
@@ -155,7 +142,7 @@ The advert asks for:
 
 ---
 
-### Reproducibility is something researchers should know
+### Reproducibility is something resposible researchers should know
 
 
 .pull-left[
@@ -163,6 +150,7 @@ The advert asks for:
 Make it easy to share their work 
 
 It will last more time
+
 
 
 ]
@@ -176,6 +164,7 @@ It will last more time
 ---
 
 class: center, middle, inverse
+
 ## **ReproHack**
 Learning from the experience
 
@@ -184,44 +173,6 @@ Learning from the experience
 
 
 
----
-
-## As researchers, we know how a manuscript is organized
-
-
-
-&lt;img src="imagenes/paper_luis.png" width="800" /&gt;
-
-
-
-
-
----
-
-class: inverse, center, middle
-
-## How **code** and **data** could be organised?
-
----
-
-## Research Compendium
-
-.pull-left[
-
-* **Organize files** according to a prevailing convention.
-
-* Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
-
-* Specify the environment (+ **reproducibility**).
-
-
-]
-
-.pull-right[
-&lt;img src="imagenes/ResearchCompendium.jpg" width="500" /&gt;
-]
-
-.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
 
 ---
 
@@ -245,7 +196,7 @@ Send their papers with **publicly available associated code and data**
 
 Attempt to **reproduce published research** of their choice from a list of proposed 
 
-&lt;img src="imagenes/selecciona.png" width="700" style="display: block; margin: auto;" /&gt;
+&lt;img src="imagenes/selecciona.png" width="500" style="display: block; margin: auto;" /&gt;
 
 
 ---
@@ -257,6 +208,7 @@ article + code + data
 
 &lt;img src="imagenes/submited.png" width="700" style="display: block; margin: auto;" /&gt;
 
+---
 
 ---
 
@@ -269,12 +221,14 @@ article + code + data
 
 ### This link led us to...
 
-&lt;img src="imagenes/collage.png" width="800" /&gt;
-
 You should give clear instructions to the reviewers on how to access the material to reproduce no matter where it is stored 
 
 
-.footnote[[Check the differences here]()]
+&lt;img src="imagenes/collage.png" width="800" /&gt;
+
+
+
+.footnote[Some resources about repositories [here]()]
 
 ---
 
@@ -304,7 +258,7 @@ Guide the reviewer to your results
 
 --
 
-**All of this information is necessary to reproduce the article?**
+### **Is all of this information necessary to reproduce the article?**
 
 --
 
@@ -317,30 +271,85 @@ class: inverse, middle, center
 
 ## 🧭
 
-For example,
-including licenses is important to indicate to another person if the data and code could be reused and how. But reading a license will not give us the steps we must take to reproduce the article.
-
---
 ### What do we need?
+
+Reading a license will not give us the steps we must take to reproduce the article.
+
 
 ---
 
-## HOW?
+## Explain the HOW
 
-&lt;img src="imagenes/categorizing_readmes.png" width="500" /&gt;
+Categorizing the Content of GitHub README Files
+
+&lt;table class=" lightable-minimal" style='font-family: "Trebuchet MS", verdana, sans-serif; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Category &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Example_section_headings &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; What &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Introduction, project, background &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Why &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Advantages of the project, comparison with related work &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; How &lt;/td&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: white !important;background-color: #D7261E !important;"&gt; Getting started, how to run, installation, how to update, configuration, languages, dependencies,... &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; When &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Project status, versions, roadmap,... &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Who &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Project team, community, contact,... &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; References &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; feedback, getting support, more information &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Contribution &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Contribution guidelines &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Other &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 
 .footnote[[Prana *et al.* (2019)](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas)]
+
+
+---
+
+## As researchers, we know how a manuscript is organized
+
+&lt;img src="imagenes/paper_luis.png" width="800" /&gt;
+
+---
+
+class: inverse, center, middle
+
+## How **code** and **data** could be organised?
 
 ---
 ## Research Compendium
 
 .pull-left[
 
-* **Organize files** according to a prevailing convention.
+1. **Organize files** according to a prevailing convention.
 
-* Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
+2. Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
 
-* Specify the environment (+ **reproducibility**).
+3. Specify the environment (+ **reproducibility**).
 
 
 ]
@@ -353,16 +362,11 @@ including licenses is important to indicate to another person if the data and co
 
 ---
 
-#####  **Organize files** according to a prevailing convention.
+## **Research Compendium** 
+### 1. **Organize files** according to a prevailing convention.
 
-.pull-left[
-&lt;img src="imagenes/compendio1.png" width="500" /&gt;
-]
 
-.pull-right[
-&lt;img src="imagenes/estructura.png" width="800" /&gt;
-]
-
+&lt;img src="imagenes/compendio1.png" width="500" style="display: block; margin: auto;" /&gt;
 .footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
 ---
 
@@ -388,29 +392,9 @@ A clear and detailed description of the files/links necessary and where they are
 
 .footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
 
-
 ---
-
-class: inverse, middle, center
-
-### The way you capture the computational environment will change the experience of reproducing the article
-Environment specified (in README)
-
-.footnote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
-
----
-
-## As author I want to ensure the reproducibility of my work
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-**Computational reproducibility**
-
-When detailed information is provided about code, software, hardware and implementation details. ]
-
-.footnote[[Stodden](https://the-turing-way.netlify.app/reproducible-research/overview/overview-definitions.html#:~:text=At%20The%20Turing%20Way%2C%20we,that%20the%20original%20team%20used.&amp;text=Reproducible%3A%20A%20result%20is%20reproducible,consistently%20produces%20the%20same%20answer.)]
----
-
-## Computational environment
+### **research compendium** 3. Specify the environment (+ **reproducibility**).
+##### Computational environment
 
 Characteristics of a computer that can affect the behavior of the work done on it, such as:
 
@@ -424,7 +408,41 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 ---
 
-## Computational environment
+class: inverse, middle, center
+
+### The way the computational environment is captured will change the experience of reproducing the article
+
+
+.footnote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
+
+---
+
+## As author I want to ensure the reproducibility of my work
+
+class: center, middle
+
+
+
+```{=html}
+&lt;div id="htmlwidget-4e41da1163bc1301e52f" style="width:720px;height:504px;" class="nomnoml html-widget"&gt;&lt;/div&gt;
+&lt;script type="application/json" data-for="htmlwidget-4e41da1163bc1301e52f"&gt;{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n# direction: down | center \n#.resaltado: fill=#8f8 title=bold\n[Reproducibilidad] -&gt; [Empírica]\n[Reproducibilidad] -&gt; [&lt;resaltado&gt; Computacional]\n[Reproducibilidad] -&gt; [Estadística]","svg":false},"evals":[],"jsHooks":[]}&lt;/script&gt;
+```
+
+
+
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+**Computational reproducibility**
+
+When detailed information is provided about code, software, hardware and implementation details. ]
+
+.footnote[[Stodden (2014)](https://www.edge.org/response-detail/25340)]
+
+
+---
+
+## Capture the computational environment
+
+## 📄
 
 &gt; "At its most basic, this could be a plain text file that includes a short list of the names and version numbers of the software and other critical tools used for the analysis." 
 
@@ -433,25 +451,51 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 ---
 
-#### A **detailed description** of dependencies and software/hardware used
+**A.** Provide **detailed description** of dependencies and software/hardware used
 
+**B.** Describe how to **install** requiered software
 
-&lt;img src="imagenes/sessioninfo.png" width="800" /&gt;
-
----
-
-## How to **Install** software
-
-example: information to run a Docker container
-
-&lt;img src="imagenes/steps.png" width="500" /&gt;
-
+**C.** Share a **link**
 
 ---
 
-## Sharing a **link** to an interactive notebook
+#### **A.** Provide **detailed description** of dependencies and software/hardware used
+
+** Hackathon participant experience** &lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+👩‍💻
+&gt; *"It is better than nothing, I guess"*
+
+&lt;img src="imagenes/sessioninfo.png" width="500" /&gt;
+
+
+
+
+---
+
+## **B.** How to **Install** software
+
+example: Install Docker
+
+**Hackathon participant experience** &lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+☕ 
+&gt; *"Time for a coffe"*
+
+&lt;img src="imagenes/docker.png" width="500" /&gt;
+
+
+---
+
+## **C.** Sharing a **link** 
 
 example: Binder
+
+** Hackathon participant experience** &lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"&gt;&lt;/path&gt;&lt;/svg&gt;&lt;svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;"&gt;  [ comment ]  &lt;path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"&gt;&lt;/path&gt;&lt;/svg&gt;
+
+
+😎
+&gt; *"So, I click a link and I get the results?"*
 
 &lt;img src="imagenes/ResearchCompendium.jpg" width="500" /&gt;
 
@@ -467,23 +511,66 @@ class: inverse, center, middle,
 
 ---
 
-# Binder
 
-Binder is an open source web service that lets users create sharable, interactive, reproducible environments in the cloud.
+
 
 
 &lt;img src="imagenes/binder.png" width="1295" /&gt;
 
 
+Binder is an open source web service that lets users create sharable, interactive, reproducible environments in the cloud.
+
+
+---
+## The dark side of the links
+
+What happens when the technology fails? Should we provide other options?
+
+&lt;img src="imagenes/links.png" width="1024" /&gt;
 
 
 ---
 ## Environments
 
+&lt;table class=" lightable-classic" style='font-family: "Arial Narrow", "Source Sans Pro", sans-serif; margin-left: auto; margin-right: auto;'&gt;
+ &lt;thead&gt;
+&lt;tr&gt;
+&lt;th style="empty-cells: hide;" colspan="2"&gt;&lt;/th&gt;
+&lt;th style="padding-bottom:0; padding-left:3px;padding-right:3px;text-align: center; " colspan="2"&gt;&lt;div style="border-bottom: 1px solid #111111; margin-bottom: -1px; "&gt;Interaction style&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; uno &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; dos &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Graphical &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Command.line &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;vertical-align: top !important;" rowspan="2"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt;  &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   
+   &lt;td style="text-align:left;"&gt; Software and versions &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Binder &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Conda &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; What is reproduced? &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Entire system &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Virtual Machines &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Containers &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
 &lt;img src="imagenes/environments.png" width="800" style="display: block; margin: auto;" /&gt;
 
 
-.footnote[[TTW](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
+.footnote[[Recreated from The Turing Way Community Book (2019)](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
 
 
 
@@ -491,23 +578,23 @@ Binder is an open source web service that lets users create sharable, interactiv
 ---
 
 class: middle, inverse, center
-## Did you ever consider that your next scientific article can have not only readers but also **users**?
+### Did you ever consider that your next scientific article can have not only readers but also **users**?
 
 ---
 
 ## Documentation
 
-The more detailed the documentation, the easier it will be for someone who does not know about the technologies used in the article, reproduce it
+The more detailed the documentation, the easier it will be for someone who does not know about the technologies used in the article to reproduce it
 
 ---
 
-# **{**Definición**}**
-### Software para investigación
+# **{**Definition**}**
+### Research software
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-#### Es que se utiliza para generar, procesar o analizar los resultados para una **publicación** (ya sea en una revista, resumen para congreso, monografía, libro o tesis)
+#### Software that is used to generate, process or analyse results that you intend to appear in a publication (either in a journal, conference paper, monograph, book or thesis).
 
-#### Puede comprender desde unas **pocas líneas de código** (...), hasta un paquete de software desarrollado profesionalmente.]
+#### Research software can be anything from a few lines of code written by yourself, to a professionally developed software package]
 
 .footnote[[Hettrick *et al.* (2014)](https://doi.org/10.5281/zenodo.608046)]
 
@@ -535,27 +622,18 @@ The more detailed the documentation, the easier it will be for someone who does 
 .footnote[[The Turing Way Community, &amp; Scriberia. (2020)]( http://doi.org/10.5281/zenodo.3695300)]]
 
 
----
 
 
 ---
 
-
-class: center, middle
-
+class: inverse, middle, center
 
 
-```{=html}
-&lt;div id="htmlwidget-070ccec31cb6405971b0" style="width:720px;height:504px;" class="nomnoml html-widget"&gt;&lt;/div&gt;
-&lt;script type="application/json" data-for="htmlwidget-070ccec31cb6405971b0"&gt;{"x":{"code":"\n#fill: #FEFEFF\n#lineWidth: 1\n#zoom: 4\n#direction: right\n\n# direction: down | center \n#.resaltado: fill=#8f8 title=bold\n[Reproducibilidad] -&gt; [Empírica]\n[Reproducibilidad] -&gt; [&lt;resaltado&gt; Computacional]\n[Reproducibilidad] -&gt; [Estadística]","svg":false},"evals":[],"jsHooks":[]}&lt;/script&gt;
-```
-
-.footnote[[Stodden (2014)](https://www.edge.org/response-detail/25340)]
 
 
 ---
-
-# ReproHack
+class: middle, center
+# Join us!
 
 &lt;img src="imagenes/reprohack.png" width="200" style="display: block; margin: auto;" /&gt;
 
@@ -563,7 +641,7 @@ class: center, middle
 
 [Slack](https://reprohack-autoinvite.herokuapp.com/)
 
-[Email](https://reprohack-autoinvite.herokuapp.com/)
+[Email](reprohack.team@gmail.com)
 
 
 ---
@@ -582,38 +660,25 @@ class: center, middle
 
 ---
 
+# Ana Krystalli's talk in UseR! 2020
+
+[Video](https://www.youtube.com/watch?v=KHMW8fV2NXo)
+
+&lt;img src="imagenes/anna.png" width="700" style="display: block; margin: auto;" /&gt;
 
 
 
 ---
+class: middle, inverse, center
+## Thanks to ReproHack **Team**!
 
-## Thanks to ReproHack Team!
+Anna Krystalli &lt;br&gt; 
+Daniela &lt;br&gt; 
+Linda &lt;br&gt; 
+Riccarda &lt;br&gt; 
+Paloma Rojas-Saunero &lt;br&gt; 
+Florencia D'Andrea
 
-Anna Krystalli 
-Daniela
-Linda
-Riccarda
-Paloma Rojas-Saunero
-
----
-
-### Recursos para consultar 📚💻
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-* [Canal de YouTube de R-Ladies](https://www.youtube.com/channel/UCDgj5-mFohWZ5irWSFMFcng)
-
-* [R4DS en español - G. Grolemund y H. Wickham ](https://es.r4ds.hadley.nz/)
-
-* [R Markdown: The Definitive Guide - Y. Xie, J. J. Allaire, G. Grolemund](https://bookdown.org/yihui/rmarkdown/)
-
-* [Happy Git With R - J. Bryan, the STAT 545 TAs, J. Hester](https://happygitwithr.com/)
-
-* [Mastering Shiny - H. Wickham](https://mastering-shiny.org/)
-
-* [Become and R package developer! - M. Salmon](hhttps://new-r-dev.netlify.app/)
-
-* [Interactive web-based data visualization with R, plotly, and shiny - C. Sievert](https://plotly-r.com/)
-]
 
 ---
 
@@ -633,10 +698,6 @@ background-size: cover
 
 * Wilkinson, M., Dumontier, M., Aalbersberg, I. et al. The FAIR Guiding Principles for scientific data management and stewardship. Sci Data 3, 160018 (2016). https://doi.org/10.1038/sdata.2016.18
 
-* [Webpage Principios FAIR](https://www.go-fair.org/fair-principles/)
-
-* Wickham, H. (2015). [R packages: organize, test, document, and share your code."](https://r-pkgs.org/index.html) O'Reilly Media, Inc."
-
 * Kryvokhyzha D. () [The best free Research Data Repository](https://evodify.com/free-research-repository/)
 ]
 
@@ -652,7 +713,6 @@ background-size: cover
 
 * [Library Carpentry: FAIR Data and Software](https://librarycarpentry.org/lc-fair-research/)
 
-* Mancini, M., Karakuzu, A., Cohen-Adad, J., Cercignani, M., Nichols, T. E., &amp; Stikov, N. (2020). [An interactive meta-analysis of MRI biomarkers of myelin.](https://elifesciences.org/articles/61523) Elife, 9, e61523.
 
 ]
 
