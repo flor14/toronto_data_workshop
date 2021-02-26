@@ -311,7 +311,7 @@ knitr::include_graphics("imagenes/ResearchCompendium.jpg")
 ```
 ]
 
-.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
+.footnote[[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/)]
 ---
 
 ## Research Compendium 
@@ -370,12 +370,12 @@ Guide the reviewer to the results
 
 --
 
-### **Is all of this information necessary to reproduce the article?**
+### Is all of this information **necessary to reproduce the article?**
 
 [Example `rrtools README`](https://github.com/annakrystalli/rrcompendiumDTB)
 
 
-.footnote[[Guide to writing "readme" style metadata - Cornell University](https://data.research.cornell.edu/content/readme)]
+.footnote[[Guide to writing "README" style metadata - Cornell University](https://data.research.cornell.edu/content/readme)]
 
 
 ---
@@ -443,7 +443,7 @@ class: inverse, middle, center
 ## 💻
 
 #### How the computational environment is captured could change the experience of reproducing the article
-### And what to write in the **README**
+### And what to write -> **README**
 
 
 ---
@@ -470,7 +470,7 @@ Important to capture them to avoid:
 
 * Problems when sharing your code
 
-* That you code breaks with time and actualizations
+* That you code breaks with time
 
 ```{r error, echo = FALSE, out.width=600}
 knitr::include_graphics("imagenes/ErrorManagement.jpg")
@@ -547,6 +547,7 @@ knitr::include_graphics("imagenes/jupyter.jpg")
 knitr::include_graphics("imagenes/binder_comic.png")
 ```
 
+.footnote[[Publishing reproducible logbooks](https://opendreamkit.org/2017/11/02/use-case-publishing-reproducible-notebooks/)]
 ---
 
 ```{r echo = FALSE, out.width=700,fig.align='center'}
@@ -556,7 +557,7 @@ knitr::include_graphics("imagenes/binder.png")
 
 Binder is an open source web service that lets users create **sharable, interactive, reproducible environments** in the cloud.
 
-[Example](https://opendreamkit.org/2017/11/02/use-case-publishing-reproducible-notebooks/)
+
 
 .footnote[[Binder 2.0 - Reproducible, interactive, sharable environments for science at scale](https://pdfs.semanticscholar.org/c043/bef741a9616d1144e0205ac21ceae881485d.pdf)]
 ---
@@ -647,13 +648,9 @@ class: middle, inverse, center
 
 ## Documentation
 
-The more detailed the documentation, the easier it will be for someone who does not know about the technologies used in the article to reproduce it
-
-
 #### Define **who** are your users and **write for them!**
 
-
-
+Are you writing the documentation for you or for someone that doesn't know the technology you are using?
 
 
 ---
@@ -742,13 +739,13 @@ knitr::include_graphics("imagenes/reprohack.png")
 
 [Playlist with 6 talks on reproducibility in Spanish](https://www.youtube.com/playlist?list=PL9-E3cL2KgKliN3DFBWfUAUNXco_NOAMQ)
 
-```{r rhlr, echo=FALSE}
-xaringanExtra::embed_xaringan(url = "https://flor14.github.io/latinr-reprohack/index.html#1")
+```{r latinr, echo = FALSE, out.width=600, fig.align='center'}
+knitr::include_graphics("imagenes/latinr.png")
 ```
 
 ---
 
-## Ana Krystalli's talk in UseR! 2020
+## Ana Krystalli - UseR! 2020
 
 [Video](https://www.youtube.com/watch?v=KHMW8fV2NXo)
 
