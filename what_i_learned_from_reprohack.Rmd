@@ -399,7 +399,9 @@ Reading a license will not give us the steps we must take to reproduce the artic
 
 ---
 
-## Explain the HOW
+## Explain HOW
+
+Categorizing the Content of GitHub README Files
 
 ```{r catego, echo = FALSE, out.width=500}
 
@@ -411,7 +413,7 @@ kableExtra::kbl(data.frame(Category = c("What", "Why", "How", "When", "Who", "Re
                                         "Project team, community, contact,...",
                                         "feedback, getting support, more information",
                                         "Contribution guidelines", " ") )) %>% 
-    kable_minimal() %>% 
+   kable_paper("hover", full_width = F) %>% 
   row_spec(3, bold = T, color = "white", background = "#D7261E")
 
 
@@ -446,26 +448,23 @@ class: inverse, middle, center
 
 .footnote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
 
+
+
 ---
 
-class: center, middle
+## Computational environment
 
-## As author I want to ensure the reproducibility of my work
+## 💻
 
-```{nomnoml echo=FALSE, svg= TRUE, fig.width = 10, fig.align = "center"}
-# direction: down | center 
-#.resaltado: fill=#8f8 title=bold
-[Reproducibilidad] -> [Empírica]
-[Reproducibilidad] -> [<resaltado> Computacional]
-[Reproducibilidad] -> [Estadística]
-```
+Characteristics of a computer that can affect the behavior of the work done on it, such as:
 
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-**Computational reproducibility**
+* your **operating system**
 
-When detailed information is provided about code, software, hardware and implementation details. ]
+* what **software** do you have installed
 
-.footnote[[Stodden (2014)](https://www.edge.org/response-detail/25340)]
+* software **package versions** are installed
+
+.footnote [[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/)]
 
 
 ---
@@ -559,24 +558,6 @@ knitr::include_graphics("imagenes/binder.png")
 Binder is an open source web service that lets users create **sharable, interactive, reproducible environments** in the cloud.
 
 [Example](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#reproducible-academic-publications)
----
-
-## Computational environment
-
-## 💻
-
-Characteristics of a computer that can affect the behavior of the work done on it, such as:
-
-* your **operating system**
-
-* what **software** do you have installed
-
-* software **package versions** are installed
-
-.footnote [[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/)]
-
-
-
 
 
 ---
@@ -673,7 +654,7 @@ class: inverse
 
 --
 
-#### - How the **computational environment** is captured could change the experience of reproducing the article**
+#### - How the **computational environment** is captured could change the experience of reproducing the article
 
 --
 
