@@ -600,7 +600,7 @@ class: middle, inverse, center
 
 class: middle, inverse, center
 
-### ~~REVIEWER~~
+### ~~REVIEWERS~~
 
 ### **USERS**
 
@@ -662,7 +662,7 @@ class: inverse
 
 class: inverse, middle, center
 
-### Organize a remote hackaton 
+### Organize a remote hackathon 
 
 Attend our events!
 
@@ -706,7 +706,7 @@ xaringanExtra::embed_xaringan(url = "https://flor14.github.io/latinr-reprohack/i
 knitr::include_graphics("imagenes/anna.png")
 ```
 
-* Anna Krystalli's [`rrtools` Tutorial](https://annakrystalli.me/rrresearch/10_compendium.html) 
+
 
 ---
 
