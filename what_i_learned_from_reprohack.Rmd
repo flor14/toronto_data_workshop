@@ -64,8 +64,8 @@ meta() %>%
       "Choose your own adventure to a reproducible scientific article:", 
       "learnings from ReproHack"
     ),
-    url = "https://flor14.github.io/rladies-jujuy/presentacion.html?panelset=licencia#1",
-    image = "https://res.cloudinary.com/flor/image/upload/v1608248822/jujuy-colores_frmvax.jpg",
+    url = "https://https://flor14.github.io/toronto_data_workshop/what_i_learned_from_reprohack.html#1",
+    image = "https://res.cloudinary.com/flor/image/upload/v1614305498/75581_l4kohr.jpg",
     image_alt = paste(
       "Florencia D'Andrea",
       "February 2021"
