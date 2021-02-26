@@ -114,8 +114,8 @@ knitr::include_graphics("imagenes/reprohack.png")
 
 
 ---
-class: center
-Researchers are sharing their code and data
+
+
 
 ```{r open_research, echo = FALSE, out.width=700, fig.align = "center"}
 knitr::include_graphics("imagenes/openresearch.jpg")
@@ -133,7 +133,25 @@ knitr::include_graphics("imagenes/circulo.png")
 
 
 
+---
 
+### The scientific community should learn about reproducible practises 
+
+* Track a complete history of your research and **ensure the continuity of your work**
+
+* Facilitate collaboration 
+
+* Publish validated research 
+
+* Write your papers efficiently
+
+* Get credits for your work fairly
+
+```{r cultural_shift2, echo = FALSE, out.width=700, fig.align='center'}
+knitr::include_graphics("imagenes/researchtools.jpg")
+```
+
+.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 ---
 
 ## Reproducibility is consider a proof of **Research Quality**...
@@ -153,21 +171,6 @@ knitr::include_graphics("imagenes/codecheck2.png")
 
 
 ---
- 
-## ... even if it is not the only one
-
-
-.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-
-#### "The fact that an analysis is reproducible does not guarantee the quality, correctness, or validity of the published results."
-
-]
-
-
-
-.footnote[[Peng *et al.* (2011)](https://science.sciencemag.org/content/334/6060/1226) ]
- 
----
 
 class: middle, center
 
@@ -184,6 +187,7 @@ Have you come across job descriptions asking for such a commitment before?</p>&m
 
 .footnote[[ReproHack Twitter](https://twitter.com/ReproHack)]
 
+
 ---
 
 class: middle, center
@@ -191,11 +195,12 @@ class: middle, center
 ## ¿Are we living a cultural **change**?
 
 
-```{r cultural_shift, echo = FALSE, out.width=400, fig.align='center'}
+```{r cultural_shift, echo = FALSE, out.width=700, fig.align='center'}
 knitr::include_graphics("imagenes/CultureShift.jpg")
 ```
 
 .footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
+
 ---
 
 class: center, middle, inverse
@@ -230,25 +235,24 @@ knitr::include_graphics("imagenes/circulo.png")
 .pull-right[
 ### Participants
 
-Attempt to **reproduce published research** of their choice from a list of proposed 
+Attempt to **reproduce published research** of their choice from a list of proposed papers
 
 ```{r sub_form, echo = FALSE, out.width=500, fig.align = "center"}
 knitr::include_graphics("imagenes/selecciona.png")
 ```
 ]
 
+At the end, the participants give feedback to the authors
 
 ---
 
 ## An example of a **submitted paper**  
 
+Thanks [Luis Verde](https://twitter.com/LuisDVerde)
+
 ```{r sub_form3, echo = FALSE, out.width=700, fig.align = "center"}
 knitr::include_graphics("imagenes/submited.png")
 ```
-
-
-.footnote[Thanks [Luis Verde](https://twitter.com/LuisDVerde)!]
-
 
 
 ---
@@ -282,7 +286,7 @@ class: inverse, center, middle
 ]
 
 .pull-right[
-```{r rc3, echo = FALSE, out.width=500}
+```{r rc3, echo = FALSE, out.width=400}
 knitr::include_graphics("imagenes/ResearchCompendium.jpg")
 ```
 ]
@@ -301,8 +305,6 @@ knitr::include_graphics("imagenes/compendio1.png")
 
 .pull-right[
 
-####  `rrtools` R Package
-
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 [`rrtools`](https://github.com/benmarwick/rrtools) provides instructions, templates and functions to make a basic compendium suitable for writing **reproducible  research  with R **.]
 
@@ -320,37 +322,20 @@ knitr::include_graphics("imagenes/compendio1.png")
 knitr::include_graphics("imagenes/submited2.png")
 ```
 
-
 ---
-
-## This link led us to...
-
-You should give clear **instructions to the reviewers** on how to access the material to reproduce no matter where it is stored 
-
-
-```{r collage, echo = FALSE, out.width=800}
-knitr::include_graphics("imagenes/collage.png")
-```
-
-
-
-.footnote[Some resources about repositories [here]()]
-
----
-
 class: inverse, center, middle
 
 
 ## 📄
 
-## **Readme**
+## `README`
 
-Guide the reviewer to your results
+Guide the reviewer to the results
 
 
 ---
 
-## What a **readme** should have?
+## What a `README` should have?
 
 * General information
 
@@ -366,7 +351,10 @@ Guide the reviewer to your results
 
 ### **Is all of this information necessary to reproduce the article?**
 
-.footnote[[Guide to writing "readme" style metadata - RESEARCH DATA MANAGEMENT SERVICE GROUP - Cornell University](https://data.research.cornell.edu/content/readme)]
+
+[Example `rrtools README`](https://github.com/annakrystalli/rrcompendiumDTB)
+
+.footnote[[Guide to writing "readme" style metadata - Cornell University](https://data.research.cornell.edu/content/readme)]
 
 
 ---
@@ -384,12 +372,12 @@ Reading a license will not give us the steps we must take to reproduce the artic
 
 ## Explain HOW
 
-Categorizing the Content of GitHub README Files
+Categorizing the Content of GitHub `README` Files
 
 ```{r catego, echo = FALSE, out.width=500}
 
 kableExtra::kbl(data.frame(Category = c("What", "Why", "How", "When", "Who", "References", "Contribution", "Other"),
-           Example_section_headings = c("Introduction, project, background",
+           `Example section headings` = c("Introduction, project, background",
                                         "Advantages of the project, comparison with related work",
                                         "Getting started, how to run, installation, how to update, configuration, languages, dependencies,...",
                                         "Project status, versions, roadmap,...",
@@ -410,11 +398,11 @@ kableExtra::kbl(data.frame(Category = c("What", "Why", "How", "When", "Who", "Re
 
 ## What I find useful to reproduce the article results? 
 
-A clear and detailed description of the files/links necessary and where they are
+A clear and detailed description in the `README` of the files/links necessary to run and where they are
 
-**Write a reproducibility ROADMAP**
 
-```{r ej1, echo = FALSE, out.width=300}
+
+```{r ej1, echo = FALSE, out.width=600}
 knitr::include_graphics("imagenes/estructura.png")
 ```
 
@@ -426,14 +414,13 @@ class: inverse, middle, center
 
 ## 💻
 
-### How the computational environment is captured could change the experience of reproducing the article
-## And what to write in the `readme`
+#### How the computational environment is captured could change the experience of reproducing the article
+### And what to write in the `readme`
 
 .footnote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
 
-
-
 ---
+
 
 ## Computational environment
 
@@ -449,25 +436,28 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 .footnote [[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/)]
 
+---
+## Computational Environments
+
+Important to capture them to avoid:
+
+* problems when sharing your code
+
+* That you code breaks with time and actualizations
+
+```{r error, echo = FALSE, out.width=600}
+knitr::include_graphics("imagenes/ErrorManagement.jpg")
+```
+
+.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
+
 
 ---
 
-## Capture the computational environment
-
-## 📄
-
-> "At its most basic, this could be a plain text file that includes a short list of the names and version numbers of the software and other critical tools used for the analysis." 
+## Three examples of information to include in the `README` in relation with the method you are using to capture the environment
 
 
-.footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
-
----
-
-
-## Three examples of what to include in the **readme**
-
-
-**A.** Provide **detailed description** of dependencies and software/hardware used
+**A.** Provide a plain text file with the **detailed description** of dependencies and software/hardware used
 
 **B.** Describe how to **install** required software
 
@@ -477,9 +467,7 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 ### **A.** Provide **detailed description** of dependencies and software/hardware used
 
-** Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")``r icon::fontawesome("star")`
-
-👩‍💻 
+👩‍💻  ** Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")``r icon::fontawesome("star")`
 > *"Could be easier"*
 
 ```{r sessioninfo, echo = FALSE, out.width=700, fig.align='center'}
@@ -495,9 +483,8 @@ knitr::include_graphics("imagenes/sessioninfo.png")
 
 example: Install Docker 
 
-**Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")`
+☕   **Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")`
 
-☕   
 > *"This will take some time. Let's go for a coffee"*
 
 ```{r docker, echo = FALSE, out.width=700, fig.align='center'}
@@ -511,14 +498,18 @@ knitr::include_graphics("imagenes/docker.png")
 
 example: Binder
 
-**Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")`
+😎 **Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")`
 
-
-😎
 > *"So, I click a link and I get the results?"*
 
 ```{r binder, echo = FALSE, out.width=500}
 knitr::include_graphics("imagenes/ResearchCompendium.jpg")
+```
+
+---
+
+```{r binder2, echo = FALSE, out.width=800}
+knitr::include_graphics("imagenes/binder_comic.png")
 ```
 
 ---
@@ -528,7 +519,7 @@ class: inverse, center, middle,
 ## ☁💻☁
 ### Binder’s goal is to lower the barrier to interactivity, and to allow users to utilize code that is hosted in repository providers such as GitHub
 
-.footnote[[Binder 2.0 - Reproducible, interactive, sharable environments for science at scale](https://pdfs.semanticscholar.org/c043/bef741a9616d1144e0205ac21ceae881485d.pdf)]
+
 
 
 ---
@@ -540,10 +531,12 @@ knitr::include_graphics("imagenes/binder.png")
 
 Binder is an open source web service that lets users create **sharable, interactive, reproducible environments** in the cloud.
 
-[Example](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#reproducible-academic-publications)
+[Example](https://opendreamkit.org/2017/11/02/use-case-publishing-reproducible-notebooks/)
 
-
+.footnote[[Binder 2.0 - Reproducible, interactive, sharable environments for science at scale](https://pdfs.semanticscholar.org/c043/bef741a9616d1144e0205ac21ceae881485d.pdf)]
 ---
+
+
 ## Capturing Computational Environments
 
 ```{r env, echo = FALSE, out.width=800, fig.align='center'}
@@ -560,20 +553,28 @@ knitr::include_graphics("imagenes/environments.png")
 ```
 
 
-.footnote[[*Recreated from* The Turing Way: A Handbook for Reproducible Data Science  (2019)](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
+.footnote[[The Turing Way: A Handbook for Reproducible Data Science  (2019)](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
 
 
 
 ---
 ## The dark side of the links 
 
+
+```{r notfound, echo = FALSE, out.width=600, fig.align='center'}
+knitr::include_graphics("imagenes/links.png")
+```
+
+---
+
 * **What happens when the technology fails?** 
 * Should we provide more than one option?
 * Should our code have **maintainers**?
 
-```{r notfound, echo = FALSE, out.width=500, fig.align='center'}
-knitr::include_graphics("imagenes/links.png")
+```{r FixingLinks, echo = FALSE, fig.align='center', out.width=600}
+knitr::include_graphics("imagenes/FixingLinks.jpg")
 ```
+
 
 ---
 
@@ -594,6 +595,15 @@ class: middle, inverse, center
 ## 👩‍💻
 
 ### Did you ever consider that your next scientific article **can have not only readers but also users**?
+
+---
+
+class: middle, inverse, center
+
+### ~~REVIEWER~~
+
+### **USERS**
+
 
 ---
 
@@ -696,9 +706,10 @@ xaringanExtra::embed_xaringan(url = "https://flor14.github.io/latinr-reprohack/i
 knitr::include_graphics("imagenes/anna.png")
 ```
 
-
+* Anna Krystalli's [`rrtools` Tutorial](https://annakrystalli.me/rrresearch/10_compendium.html) 
 
 ---
+
 class: middle, inverse, center
 
 
