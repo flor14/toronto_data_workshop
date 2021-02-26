@@ -107,15 +107,10 @@ knitr::include_graphics("imagenes/reprohack.png")
 ```
 
 
-**Link to the slides**: [bit.ly/reprohack_toronto](bit.ly/reprohack_toronto)
+**Link to the slides**: [bit.ly/florencia_toronto](bit.ly/florencia_toronto)
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 ]
-
-
-
-.footnote[[Cover image from: rawpixel.com - www.freepik.es](www.freepik.es)]
 
 
 ---
@@ -159,8 +154,6 @@ knitr::include_graphics("imagenes/codecheck2.png")
 
 ---
  
- 
- 
 ## ... even if it is not the only one
 
 
@@ -174,28 +167,8 @@ knitr::include_graphics("imagenes/codecheck2.png")
 
 .footnote[[Peng *et al.* (2011)](https://science.sciencemag.org/content/334/6060/1226) ]
  
-
 ---
 
-## The scientific community should learn about **reproducible practises**
-
-
-* Track a complete history of your research and **ensure the continuity of your work**
-
-* **Facilitate collaboration** and review process
-
-* Publish validated research and **avoid misinformation**
-
-* Write your papers, thesis and reports **efficiently**
-
-* **Get credits** for your work fairly
-
-```{r tools, echo = FALSE, out.width=400}
-knitr::include_graphics("imagenes/researchtools.jpg")
-```
-
- .footnote[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300) 
----
 class: middle, center
 
 ## ¿Are we living a cultural **change**?
@@ -211,8 +184,18 @@ Have you come across job descriptions asking for such a commitment before?</p>&m
 
 .footnote[[ReproHack Twitter](https://twitter.com/ReproHack)]
 
+---
+
+class: middle, center
+
+## ¿Are we living a cultural **change**?
 
 
+```{r cultural_shift, echo = FALSE, out.width=400, fig.align='center'}
+knitr::include_graphics("imagenes/CultureShift.jpg")
+```
+
+.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 ---
 
 class: center, middle, inverse
@@ -619,7 +602,7 @@ class: middle, inverse, center
 The more detailed the documentation, the easier it will be for someone who does not know about the technologies used in the article to reproduce it
 
 
-
+#### Define who are your users and **write for them!**
 
 
 
@@ -842,3 +825,9 @@ background-image:  url(imagenes/75581.jpg)
 background-size: cover
 
 
+.bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+]
+
+[Cover image from: rawpixel.com - www.freepik.es](www.freepik.es)
+]
