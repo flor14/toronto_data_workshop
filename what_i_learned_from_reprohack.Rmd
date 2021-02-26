@@ -34,7 +34,7 @@ xaringanExtra::use_logo(
 xaringanExtra::use_panelset()
 xaringanExtra::use_broadcast()
 xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin"))
+#xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin"))
 xaringanExtra::use_tachyons()
 xaringanExtra::use_fit_screen()
 xaringanExtra::use_tile_view() # O
@@ -135,26 +135,50 @@ knitr::include_graphics("imagenes/circulo.png")
 
 ---
 
-### The scientific community should learn about reproducible practises 
+### The scientific community should learn about **reproducible practises** 
 
-* Track a complete history of your research and **ensure the continuity of your work**
+
+.pull-left[
+* Track a complete history of your research and ensure the continuity of your work
 
 * Facilitate collaboration 
 
 * Publish validated research 
 
-* Write your papers efficiently
+]
 
-* Get credits for your work fairly
-
-```{r cultural_shift2, echo = FALSE, out.width=700, fig.align='center'}
+.pull-right[
+```{r cultural_shift2, echo = FALSE, out.width=500, fig.align='center'}
 knitr::include_graphics("imagenes/researchtools.jpg")
 ```
+]
+
+.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
+
+---
+
+### The scientific community should learn about **reproducible practises** 
+
+
+
+.pull-left[
+
+* Write your papers efficiently
+
+* Get credit for your work fairly
+]
+
+.pull-right[
+```{r cultural_shift3, echo = FALSE, out.width=500, fig.align='center'}
+knitr::include_graphics("imagenes/researchtools.jpg")
+```
+]
+
 
 .footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 ---
 
-## Reproducibility is consider a proof of **Research Quality**...
+## Reproducibility is consider a proof of **Research Quality**
 
 .pull-up[
 ```{r cd, echo=FALSE, out.width=400, fig.align='center'}
@@ -242,7 +266,7 @@ knitr::include_graphics("imagenes/selecciona.png")
 ```
 ]
 
-At the end, the participants give feedback to the authors
+At the end, the participants give feedback to the authors 
 
 ---
 
@@ -280,7 +304,8 @@ class: inverse, center, middle
 
 2. Provide **separation between data, methods and results** expressing unambiguously the relationship between the three.
 
-3. Specify the environment (+ **reproducibility**).
+3. Specify the environment 
+(+ **reproducibility**).
 
 
 ]
@@ -298,7 +323,7 @@ knitr::include_graphics("imagenes/ResearchCompendium.jpg")
 
 .pull-left[
 
-```{r rc4, echo = FALSE, out.width=500, fig.align='center'}
+```{r rc4, echo = FALSE, out.width=450, fig.align='center'}
 knitr::include_graphics("imagenes/compendio1.png")
 ```
 ]
@@ -306,7 +331,7 @@ knitr::include_graphics("imagenes/compendio1.png")
 .pull-right[
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-[`rrtools`](https://github.com/benmarwick/rrtools) provides instructions, templates and functions to make a basic compendium suitable for writing **reproducible  research  with R **.]
+[`rrtools`](https://github.com/benmarwick/rrtools) provides instructions, templates and functions to make a basic compendium suitable for writing **reproducible research with R **.]
 
 * Anna Krystalli's [`rrtools` Tutorial](https://annakrystalli.me/rrresearch/10_compendium.html) 
 
@@ -325,6 +350,7 @@ knitr::include_graphics("imagenes/submited2.png")
 ---
 class: inverse, center, middle
 
+# 1
 
 ## 📄
 
@@ -339,20 +365,20 @@ Guide the reviewer to the results
 
 * General information
 
-* Data and file overview
+* **Data and file** overview
 
 --
 
-* Sharing and access information
+* **Sharing and access** information
 
-* Methodological information
+* **Methodological** information
 
 --
 
 ### **Is all of this information necessary to reproduce the article?**
 
-
 [Example `rrtools README`](https://github.com/annakrystalli/rrcompendiumDTB)
+
 
 .footnote[[Guide to writing "readme" style metadata - Cornell University](https://data.research.cornell.edu/content/readme)]
 
@@ -372,7 +398,7 @@ Reading a license will not give us the steps we must take to reproduce the artic
 
 ## Explain HOW
 
-Categorizing the Content of GitHub `README` Files
+
 
 ```{r catego, echo = FALSE, out.width=500}
 
@@ -383,9 +409,11 @@ kableExtra::kbl(data.frame(Category = c("What", "Why", "How", "When", "Who", "Re
                                         "Project status, versions, roadmap,...",
                                         "Project team, community, contact,...",
                                         "feedback, getting support, more information",
-                                        "Contribution guidelines", " ") )) %>% 
-   kable_paper("hover", full_width = F) %>% 
-  row_spec(3, bold = T, color = "white", background = "#D7261E")
+                                        "Contribution guidelines", " ") ),
+           col.names = c("Category", "Example section headings")) %>% 
+   kable_minimal() %>% 
+   kable_styling() %>% 
+  row_spec(3, bold = T, color = "white", background = "#D7261E") 
 
 
 # knitr::include_graphics("imagenes/categorizing_readmes.png")
@@ -396,13 +424,16 @@ kableExtra::kbl(data.frame(Category = c("What", "Why", "How", "When", "Who", "Re
 
 ---
 
+
+
+
 ## What I find useful to reproduce the article results? 
 
 A clear and detailed description in the `README` of the files/links necessary to run and where they are
 
 
 
-```{r ej1, echo = FALSE, out.width=600}
+```{r ej1, echo = FALSE, out.width=800}
 knitr::include_graphics("imagenes/estructura.png")
 ```
 
@@ -412,12 +443,13 @@ knitr::include_graphics("imagenes/estructura.png")
 class: inverse, middle, center
 
 
+# 2
+
 ## 💻
 
 #### How the computational environment is captured could change the experience of reproducing the article
-### And what to write in the `readme`
+### And what to write in the **README**
 
-.footnote[[HOW (AND WHY) TO MAKE A RESEARCH COMPENDIUM - Dr. Max Joseph ](https://mbjoseph.github.io/intro-research-compendia/#1)]
 
 ---
 
@@ -434,14 +466,14 @@ Characteristics of a computer that can affect the behavior of the work done on i
 
 * software **package versions** are installed
 
-.footnote [[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/)]
+.footnote[[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/)]
 
 ---
 ## Computational Environments
 
 Important to capture them to avoid:
 
-* problems when sharing your code
+* Problems when sharing your code
 
 * That you code breaks with time and actualizations
 
@@ -454,7 +486,7 @@ knitr::include_graphics("imagenes/ErrorManagement.jpg")
 
 ---
 
-## Three examples of information to include in the `README` in relation with the method you are using to capture the environment
+### **3** examples of information to include in the `README` depending on how you are capturing the computational environment
 
 
 **A.** Provide a plain text file with the **detailed description** of dependencies and software/hardware used
@@ -465,12 +497,15 @@ knitr::include_graphics("imagenes/ErrorManagement.jpg")
 
 ---
 
-### **A.** Provide **detailed description** of dependencies and software/hardware used
+### **A.** Provide a plain text file with the **detailed description** of dependencies and software/hardware used
 
 👩‍💻  ** Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")``r icon::fontawesome("star")`
+
+--
+
 > *"Could be easier"*
 
-```{r sessioninfo, echo = FALSE, out.width=700, fig.align='center'}
+```{r sessioninfo, echo = FALSE, out.width=600, fig.align='center'}
 knitr::include_graphics("imagenes/sessioninfo.png")
 ```
 
@@ -485,9 +520,11 @@ example: Install Docker
 
 ☕   **Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")`
 
+--
+
 > *"This will take some time. Let's go for a coffee"*
 
-```{r docker, echo = FALSE, out.width=700, fig.align='center'}
+```{r docker, echo = FALSE, out.width=600, fig.align='center'}
 knitr::include_graphics("imagenes/docker.png")
 ```
 
@@ -500,27 +537,20 @@ example: Binder
 
 😎 **Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")`
 
+--
+
 > *"So, I click a link and I get the results?"*
 
-```{r binder, echo = FALSE, out.width=500}
-knitr::include_graphics("imagenes/ResearchCompendium.jpg")
+```{r binder, echo = FALSE, out.width=600}
+knitr::include_graphics("imagenes/jupyter.jpg")
 ```
 
+.footnote[[Image from Mendez *et al.*(2019)](https://link.springer.com/article/10.1007/s11306-019-1588-0)]
 ---
 
 ```{r binder2, echo = FALSE, out.width=800}
 knitr::include_graphics("imagenes/binder_comic.png")
 ```
-
----
-
-class: inverse, center, middle, 
-
-## ☁💻☁
-### Binder’s goal is to lower the barrier to interactivity, and to allow users to utilize code that is hosted in repository providers such as GitHub
-
-
-
 
 ---
 
@@ -558,7 +588,7 @@ knitr::include_graphics("imagenes/environments.png")
 
 
 ---
-## The dark side of the links 
+## The dark side of links 🌒
 
 
 ```{r notfound, echo = FALSE, out.width=600, fig.align='center'}
@@ -574,7 +604,7 @@ knitr::include_graphics("imagenes/links.png")
 ```{r FixingLinks, echo = FALSE, fig.align='center', out.width=600}
 knitr::include_graphics("imagenes/FixingLinks.jpg")
 ```
-
+.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 
 ---
 
@@ -600,19 +630,32 @@ class: middle, inverse, center
 
 class: middle, inverse, center
 
-### ~~REVIEWERS~~
 
-### **USERS**
+# 3
+
+## 👩‍💻
+
+
+## ~~REVIEWERS~~
+
+## **USERS**
 
 
 ---
+
+class: middle, inverse, center
+
+
+# 4
+
+## 📝
 
 ## Documentation
 
 The more detailed the documentation, the easier it will be for someone who does not know about the technologies used in the article to reproduce it
 
 
-#### Define who are your users and **write for them!**
+#### Define **who** are your users and **write for them!**
 
 
 
@@ -636,26 +679,38 @@ Transparency ✅
 
 ---
 
-class: inverse
+class: inverse, middle, center
 
-## What I have learned in **ReproHack**?
+## What I have learned in **ReproHack**? ♻️
 
+
+---
+
+## What I have learned in **ReproHack**? ♻️
 
 --
 
-#### - Write a **good `readme`**
+#### - It is important to write a **good README ** file
 
 --
 
 #### - How the **computational environment** is captured could change the experience of reproducing the article
 
---
-
-#### - **Researchers develops software** for their scientific articles (even if their are not aware of it)
 
 --
 
-## You can have **your own experience!** 
+#### - Write **detailed documentation** for your users
+
+--
+
+#### - **Researchers develop software** for their scientific articles (even if their are not aware of it)
+
+---
+
+class: inverse, center, middle
+
+
+## 👉 You can have **your own experience!** 
 
 
 ---
@@ -732,6 +787,7 @@ class: inverse, center, middle
 ## References
 
 ---
+
 background-image:  url(imagenes/75581.jpg)
 background-size: cover
 
@@ -739,14 +795,12 @@ background-size: cover
 
 **README**
 
+* Cornell University - [Guide to writing "readme" style metadata](https://data.research.cornell.edu/content/readme) 
+
 * Prana, G.A.A., Treude, C., Thung, F. et al. (2019) [Categorizing the Content of GitHub README Files.](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas) Empir Software Eng 24, 1296–1327 https://doi.org/10.1007/s10664-018-9660-3
 
-* [Guide to writing "readme" style metadata - RESEARCH DATA MANAGEMENT SERVICE GROUP - Cornell University](https://data.research.cornell.edu/content/readme) 
-
-
-
-* Kryvokhyzha D. () [The best free Research Data Repository](https://evodify.com/free-research-repository/)
 ]
+
 
 ---
 
@@ -757,14 +811,9 @@ background-size: cover
 
 **Reproducible Research / Open Science**
 
-* GitBook Bot, Lambert Heller, datawomanHUB, mcancellieri, Bianca Kramer, Tony Ross-Hellauer, … Jon Tennant. (2018, April 4). [Open Science Training Handbook (Version 1.1)](https://book.fosteropenscience.eu/en/). Zenodo. http://doi.org/10.5281/zenodo.1212538
+* Hettrick, S., Antonioletti, M., Carr, L., Chue Hong, N., Crouch, S., De Roure, D., … Sufi, S. (2014). UK Research Software Survey 2014 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.14809
 
 * Marwick, B., Boettiger, C., & Mullen, L. (2018). [Packaging data analytical work reproducibly using R (and friends). The American Statistician 72(1), 80-88.](https://doi.org/10.1080/00031305.2017.1375986)
-
-* [OECD (2015), “Making Open Science a Reality”](https://www.fct.pt/dsi/docs/Making_Open_Science_a_Reality.pdf), OECD Science, Technology and Industry Policy Papers, No. 25,
-OECD Publishing, Paris. http://dx.doi.org/10.1787/5jrs2f963zs1-en
-
-* Peng RD (2011), [Reproducible Research in Computational Science. Science 334(6060): 1226–1227](doi:10.1126/science.1213847)
 
 * Stodden, V. (2014). [Online; accessed 27. May 2020]. URL: https://www.edge.org/response-detail/25340.
 
@@ -778,11 +827,12 @@ background-image: url(imagenes/75581.jpg)
 background-size: cover
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
-#### Videos - Talks - Books - Blogs
+
+#### Other Videos - Talks - Books - Blogs
+
+* [Improve your workflow for reproducible science - Mine Çetinkaya-Rundel](https://mine-cetinkaya-rundel.github.io/improve-repro-workflow-reproducibilitea-2020/slides/improve-repro-workflow-reproducibilitea-2020.pdf)
 
 * [How To Make Your Data Analysis Notebooks More Reproducible - Kartik Rham. RStudioConf::2019](https://rstudio.com/resources/rstudioconf-2019/a-guide-to-modern-reproducible-data-science-with-r-karthik-ram/) 
-
-* [Writing articles and reproducible documents R - Anna Quaglieri](https://rpubs.com/annaquagli/471405)
 
 * [Reproducible Environments - RStudio](https://environments.rstudio.com/)
 
@@ -791,10 +841,10 @@ background-size: cover
 * [ROpenSci - Reproducibility in Science A Guide to enhancing reproducibility in scientific results and writing](https://ropensci.github.io/reproducibility-guide/)
 
 * [Putting the R into Reproducible Research - Anna Krystalli](https://annakrystalli.me/talks/r-in-repro-research.html#1)
-
-* [Improve your workflow for reproducible science - Mine Çetinkaya-Rundel](https://mine-cetinkaya-rundel.github.io/improve-repro-workflow-reproducibilitea-2020/slides/improve-repro-workflow-reproducibilitea-2020.pdf) ]
+]
 
 ---
+
 background-image:  url(imagenes/75581.jpg)
 background-size: cover
 
@@ -820,12 +870,14 @@ class: center, middle
 
 
 `r icon::fontawesome("twitter")` [@cantoflor_87]("http://twitter.com/cantoflor_87")<br>
-`r icon::fontawesome("link")` [florencia.netlify.app/es-es/]("https://florencia.netlify.app/es-es/")
+`r icon::fontawesome("link")` [florencia.netlify.app]("https://florencia.netlify.app/es-es/")
 ]
 
 .pull-right[ 
 ```{r foto, echo = FALSE, out.width=250}
-knitr::include_graphics("https://res.cloudinary.com/flor/image/upload/v1608466115/template_primary_wahkz0.jpg")
+knitr::include_graphics("https://res.cloudinary.com/flor/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1614343937/flor_pic_ceyztn.jpg")
+
+
 ```
 ]
 
@@ -834,11 +886,13 @@ knitr::include_graphics("https://res.cloudinary.com/flor/image/upload/v160846611
 ---
 background-image:  url(imagenes/75581.jpg)
 background-size: cover
-
+class: bottom
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-]
+
 
 [Cover image from: rawpixel.com - www.freepik.es](www.freepik.es)
+]
+
 ]
