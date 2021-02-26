@@ -16,67 +16,11 @@ output:
       beforeInit: "https://platform.twitter.com/widgets.js"
 ---
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-library(xaringanExtra)
-library(tidyverse)
-library(knitr)
-library(icon)
-library(kableExtra)
-library(nomnoml)
-xaringanExtra::use_logo(
-  image_url = "https://raw.githubusercontent.com/rstudio/hex-stickers/master/PNG/xaringan.png"
-)
-xaringanExtra::use_panelset()
-xaringanExtra::use_broadcast()
-xaringanExtra::use_share_again()
-#xaringanExtra::style_share_again(share_buttons = c("twitter", "linkedin"))
-xaringanExtra::use_tachyons()
-xaringanExtra::use_fit_screen()
-xaringanExtra::use_tile_view() # O
-style_mono_accent(
-  base_color = "#0dc96f",
-  background_color = "#ffffff",
-  inverse_background_color = "#562457",
-  header_color = "#562457",
-  inverse_header_color = "#ffffff", 
-  inverse_text_color = "#ffffff",
-  code_inline_color = "#179c55",
-  link_color= "#A406B2",
-  text_font_size = "25px",
-  header_font_google = google_font("Roboto", "Medium", "500"), #Popper
-  text_font_google   = google_font("Lora", "Regular", "400"),
-  code_font_google   = google_font("Fira Mono"),
-  )
-```
 
-```{r metathis, echo=FALSE}
-library(metathis)
-meta() %>%
-  meta_name("github-repo" = "flor14/rladies-jujuy") %>% 
-  meta_social(
-    title = "Toronto Data Workshop on Reproducibility",
-    description = paste(
-      "Choose your own adventure to a reproducible scientific article:", 
-      "learnings from ReproHack"
-    ),
-    url = "https://https://flor14.github.io/toronto_data_workshop/what_i_learned_from_reprohack.html#1",
-    image = "https://res.cloudinary.com/flor/image/upload/v1614305498/75581_l4kohr.jpg",
-    image_alt = paste(
-      "Florencia D'Andrea",
-      "February 2021"
-      ),
-    og_type = "website",
-    og_author = "Florencia D'Andrea",
-    twitter_card_type = "summary_large_image",
-    twitter_creator = "@cantoflor_87",
-    twitter_site = "@cantoflor_87"
-  )
-```
+
+
+
 
 background-image: url(imagenes/75581.jpg)
 background-size: cover
@@ -101,10 +45,7 @@ class: center
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 
-```{r toronto, echo = FALSE,  fig.show = "hold", out.width=150, fig.align = "default"}
-knitr::include_graphics("imagenes/toronto.png")
-knitr::include_graphics("imagenes/reprohack.png")
-```
+<img src="imagenes/toronto.png" width="150" /><img src="imagenes/reprohack.png" width="150" />
 
 
 **Link to the slides**: [bit.ly/reprohack_toronto](bit.ly/reprohack_toronto)
@@ -117,18 +58,14 @@ knitr::include_graphics("imagenes/reprohack.png")
 
 
 
-```{r open_research, echo = FALSE, out.width=700, fig.align = "center"}
-knitr::include_graphics("imagenes/openresearch.jpg")
-```
+<img src="imagenes/openresearch.jpg" width="700" style="display: block; margin: auto;" />
 .footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 
 ---
 
 class: middle, center
 
-```{r circulo, echo = FALSE, out.width=250, fig.align = "center"}
-knitr::include_graphics("imagenes/circulo.png")
-```
+<img src="imagenes/circulo.png" width="250" style="display: block; margin: auto;" />
 ## More articles with published code and data are accessible and **could be reproduced by everyone**
 
 
@@ -148,9 +85,7 @@ knitr::include_graphics("imagenes/circulo.png")
 ]
 
 .pull-right[
-```{r cultural_shift2, echo = FALSE, out.width=500, fig.align='center'}
-knitr::include_graphics("imagenes/researchtools.jpg")
-```
+<img src="imagenes/researchtools.jpg" width="500" style="display: block; margin: auto;" />
 ]
 
 .footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
@@ -169,9 +104,7 @@ knitr::include_graphics("imagenes/researchtools.jpg")
 ]
 
 .pull-right[
-```{r cultural_shift3, echo = FALSE, out.width=500, fig.align='center'}
-knitr::include_graphics("imagenes/researchtools.jpg")
-```
+<img src="imagenes/researchtools.jpg" width="500" style="display: block; margin: auto;" />
 ]
 
 
@@ -181,16 +114,12 @@ knitr::include_graphics("imagenes/researchtools.jpg")
 ## Reproducibility is consider a proof of **Research Quality**
 
 .pull-up[
-```{r cd, echo=FALSE, out.width=400, fig.align='center'}
-knitr::include_graphics("imagenes/codecheck.png")
-```
+<img src="imagenes/codecheck.png" width="400" style="display: block; margin: auto;" />
 .footnote[[Codecheck Complete Article](https://www.nature.com/articles/d41586-020-02462-7)]
  ]
  
 .pull-down[
-```{r cd2, echo=FALSE, out.width=700, fig.align='center'}
-knitr::include_graphics("imagenes/codecheck2.png")
-```
+<img src="imagenes/codecheck2.png" width="700" style="display: block; margin: auto;" />
 ]
 
 
@@ -219,9 +148,7 @@ class: middle, center
 ## ¿Are we living a cultural **change**?
 
 
-```{r cultural_shift, echo = FALSE, out.width=700, fig.align='center'}
-knitr::include_graphics("imagenes/CultureShift.jpg")
-```
+<img src="imagenes/CultureShift.jpg" width="700" style="display: block; margin: auto;" />
 
 .footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 
@@ -233,9 +160,7 @@ class: center, middle, inverse
 Learning from the experience
 
 
-```{r rhack, echo = FALSE, out.width=150}
-knitr::include_graphics("imagenes/reprohack.png")
-```
+<img src="imagenes/reprohack.png" width="150" />
 
 
 
@@ -251,9 +176,7 @@ knitr::include_graphics("imagenes/reprohack.png")
 
 Send their papers with **publicly available associated code and data**
 
-```{r circulo2, echo = FALSE, out.width=300, fig.align = "center"}
-knitr::include_graphics("imagenes/circulo.png")
-```
+<img src="imagenes/circulo.png" width="300" style="display: block; margin: auto;" />
 ]
 
 .pull-right[
@@ -261,9 +184,7 @@ knitr::include_graphics("imagenes/circulo.png")
 
 Attempt to **reproduce published research** of their choice from a list of proposed papers
 
-```{r sub_form, echo = FALSE, out.width=500, fig.align = "center"}
-knitr::include_graphics("imagenes/selecciona.png")
-```
+<img src="imagenes/selecciona.png" width="500" style="display: block; margin: auto;" />
 ]
 
 At the end, the participants give feedback to the authors 
@@ -274,18 +195,14 @@ At the end, the participants give feedback to the authors
 
 Thanks [Luis Verde](https://twitter.com/LuisDVerde)
 
-```{r sub_form3, echo = FALSE, out.width=700, fig.align = "center"}
-knitr::include_graphics("imagenes/submited.png")
-```
+<img src="imagenes/submited.png" width="700" style="display: block; margin: auto;" />
 
 
 ---
 
 ## As researchers, we know how a **manuscript** is organized
 
-```{r paper, echo = FALSE, out.width=700}
-knitr::include_graphics("imagenes/paper_luis.png")
-```
+<img src="imagenes/paper_luis.png" width="700" />
 
 ---
 
@@ -311,9 +228,7 @@ class: inverse, center, middle
 ]
 
 .pull-right[
-```{r rc3, echo = FALSE, out.width=400}
-knitr::include_graphics("imagenes/ResearchCompendium.jpg")
-```
+<img src="imagenes/ResearchCompendium.jpg" width="400" />
 ]
 
 .footnote[[Marwick *et al.* (2018)](https://doi.org/10.1080/00031305.2017.1375986)]
@@ -323,9 +238,7 @@ knitr::include_graphics("imagenes/ResearchCompendium.jpg")
 
 .pull-left[
 
-```{r rc4, echo = FALSE, out.width=450, fig.align='center'}
-knitr::include_graphics("imagenes/compendio1.png")
-```
+<img src="imagenes/compendio1.png" width="450" style="display: block; margin: auto;" />
 ]
 
 .pull-right[
@@ -343,9 +256,7 @@ knitr::include_graphics("imagenes/compendio1.png")
 
 ## How data and code is shared?
 
-```{r sub_form2, echo = FALSE, out.width=700,fig.align = "center"}
-knitr::include_graphics("imagenes/submited2.png")
-```
+<img src="imagenes/submited2.png" width="700" style="display: block; margin: auto;" />
 
 ---
 class: inverse, center, middle
@@ -400,24 +311,48 @@ Reading a license will not give us the steps we must take to reproduce the artic
 
 
 
-```{r catego, echo = FALSE, out.width=500}
-
-kableExtra::kbl(data.frame(Category = c("What", "Why", "How", "When", "Who", "References", "Contribution", "Other"),
-           `Example section headings` = c("Introduction, project, background",
-                                        "Advantages of the project, comparison with related work",
-                                        "Getting started, how to run, installation, how to update, configuration, languages, dependencies,...",
-                                        "Project status, versions, roadmap,...",
-                                        "Project team, community, contact,...",
-                                        "feedback, getting support, more information",
-                                        "Contribution guidelines", " ") ),
-           col.names = c("Category", "Example section headings")) %>% 
-   kable_minimal() %>% 
-   kable_styling() %>% 
-  row_spec(3, bold = T, color = "white", background = "#D7261E") 
-
-
-# knitr::include_graphics("imagenes/categorizing_readmes.png")
-```
+<table class=" lightable-minimal table" style='font-family: "Trebuchet MS", verdana, sans-serif; margin-left: auto; margin-right: auto; margin-left: auto; margin-right: auto;'>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Category </th>
+   <th style="text-align:left;"> Example section headings </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> What </td>
+   <td style="text-align:left;"> Introduction, project, background </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Why </td>
+   <td style="text-align:left;"> Advantages of the project, comparison with related work </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;color: white !important;background-color: #D7261E !important;"> How </td>
+   <td style="text-align:left;font-weight: bold;color: white !important;background-color: #D7261E !important;"> Getting started, how to run, installation, how to update, configuration, languages, dependencies,... </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> When </td>
+   <td style="text-align:left;"> Project status, versions, roadmap,... </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Who </td>
+   <td style="text-align:left;"> Project team, community, contact,... </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> References </td>
+   <td style="text-align:left;"> feedback, getting support, more information </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Contribution </td>
+   <td style="text-align:left;"> Contribution guidelines </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Other </td>
+   <td style="text-align:left;">  </td>
+  </tr>
+</tbody>
+</table>
 
 .footnote[[Prana *et al.* (2019)](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas)]
 
@@ -433,9 +368,7 @@ A clear and detailed description in the `README` of the files/links necessary to
 
 
 
-```{r ej1, echo = FALSE, out.width=800}
-knitr::include_graphics("imagenes/estructura.png")
-```
+<img src="imagenes/estructura.png" width="800" />
 
 
 ---
@@ -477,9 +410,7 @@ Important to capture them to avoid:
 
 * That you code breaks with time and actualizations
 
-```{r error, echo = FALSE, out.width=600}
-knitr::include_graphics("imagenes/ErrorManagement.jpg")
-```
+<img src="imagenes/ErrorManagement.jpg" width="600" />
 
 .footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 
@@ -499,15 +430,13 @@ knitr::include_graphics("imagenes/ErrorManagement.jpg")
 
 ### **A.** Provide a plain text file with the **detailed description** of dependencies and software/hardware used
 
-👩‍💻  ** Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")``r icon::fontawesome("star")`
+👩‍💻  ** Hackathon participant experience** <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg><svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
 
 --
 
 > *"Could be easier"*
 
-```{r sessioninfo, echo = FALSE, out.width=600, fig.align='center'}
-knitr::include_graphics("imagenes/sessioninfo.png")
-```
+<img src="imagenes/sessioninfo.png" width="600" style="display: block; margin: auto;" />
 
 
 
@@ -518,15 +447,13 @@ knitr::include_graphics("imagenes/sessioninfo.png")
 
 example: Install Docker 
 
-☕   **Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star")`
+☕   **Hackathon participant experience** <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"></path></svg>
 
 --
 
 > *"This will take some time. Let's go for a coffee"*
 
-```{r docker, echo = FALSE, out.width=600, fig.align='center'}
-knitr::include_graphics("imagenes/docker.png")
-```
+<img src="imagenes/docker.png" width="600" style="display: block; margin: auto;" />
 
 
 ---
@@ -535,28 +462,22 @@ knitr::include_graphics("imagenes/docker.png")
 
 example: Binder
 
-😎 **Hackathon participant experience** `r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")``r icon::fontawesome("star", style = "solid")`
+😎 **Hackathon participant experience** <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
 
 --
 
 > *"So, I click a link and I get the results?"*
 
-```{r binder, echo = FALSE, out.width=600}
-knitr::include_graphics("imagenes/jupyter.jpg")
-```
+<img src="imagenes/jupyter.jpg" width="600" />
 
 .footnote[[Image from Mendez *et al.*(2019)](https://link.springer.com/article/10.1007/s11306-019-1588-0)]
 ---
 
-```{r binder2, echo = FALSE, out.width=800}
-knitr::include_graphics("imagenes/binder_comic.png")
-```
+<img src="imagenes/binder_comic.png" width="800" />
 
 ---
 
-```{r echo = FALSE, out.width=700,fig.align='center'}
-knitr::include_graphics("imagenes/binder.png")
-```
+<img src="imagenes/binder.png" width="700" style="display: block; margin: auto;" />
 
 
 Binder is an open source web service that lets users create **sharable, interactive, reproducible environments** in the cloud.
@@ -569,18 +490,7 @@ Binder is an open source web service that lets users create **sharable, interact
 
 ## Capturing Computational Environments
 
-```{r env, echo = FALSE, out.width=800, fig.align='center'}
-
-# kableExtra::kbl(data.frame(uno = c("", "", "What is reproduced?"),
-#            dos = c("",  "Software and versions", "Entire system"),
-#            Graphical = c("", "Binder", "Virtual Machines"),
-#            `Command line` = c("",  "Conda", "Containers"))) %>% 
-#   kable_classic() %>%
-#   add_header_above(c(" " = 2,  "Interaction style" = 2)) %>% 
-#   collapse_rows(columns = 1, valign = "top")
-
-knitr::include_graphics("imagenes/environments.png")
-```
+<img src="imagenes/environments.png" width="800" style="display: block; margin: auto;" />
 
 
 .footnote[[The Turing Way: A Handbook for Reproducible Data Science  (2019)](https://the-turing-way.netlify.app/reproducible-research/renv/renv-options.html)]
@@ -591,9 +501,7 @@ knitr::include_graphics("imagenes/environments.png")
 ## The dark side of links 🌒
 
 
-```{r notfound, echo = FALSE, out.width=600, fig.align='center'}
-knitr::include_graphics("imagenes/links.png")
-```
+<img src="imagenes/links.png" width="600" style="display: block; margin: auto;" />
 
 ---
 
@@ -601,9 +509,7 @@ knitr::include_graphics("imagenes/links.png")
 * Should we provide more than one option?
 * Should our code have **maintainers**?
 
-```{r FixingLinks, echo = FALSE, fig.align='center', out.width=600}
-knitr::include_graphics("imagenes/FixingLinks.jpg")
-```
+<img src="imagenes/FixingLinks.jpg" width="600" style="display: block; margin: auto;" />
 .footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 
 ---
@@ -722,17 +628,13 @@ class: inverse, middle, center
 Attend our events!
 
 
-```{r repro, echo = FALSE, fig.align='center', out.width=500}
-knitr::include_graphics("imagenes/talking.png")
-```
+<img src="imagenes/talking.png" width="500" style="display: block; margin: auto;" />
 
 ---
 class: middle, center
 # Join us!
 
-```{r rh3, echo = FALSE, out.width=200, fig.align='center'}
-knitr::include_graphics("imagenes/reprohack.png")
-```
+<img src="imagenes/reprohack.png" width="200" style="display: block; margin: auto;" />
 
 [Twitter](https://twitter.com/ReproHack)
 
@@ -747,8 +649,12 @@ knitr::include_graphics("imagenes/reprohack.png")
 
 [Playlist with 6 talks on reproducibility in Spanish](https://www.youtube.com/playlist?list=PL9-E3cL2KgKliN3DFBWfUAUNXco_NOAMQ)
 
-```{r rhlr, echo=FALSE}
-xaringanExtra::embed_xaringan(url = "https://flor14.github.io/latinr-reprohack/index.html#1")
+
+```{=html}
+<div class="shareagain" style="min-width:300px;margin:1em auto;">
+<iframe src="https://flor14.github.io/latinr-reprohack/index.html#1" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
 ```
 
 ---
@@ -757,9 +663,7 @@ xaringanExtra::embed_xaringan(url = "https://flor14.github.io/latinr-reprohack/i
 
 [Video](https://www.youtube.com/watch?v=KHMW8fV2NXo)
 
-```{r rh, echo = FALSE, out.width=600, fig.align='center'}
-knitr::include_graphics("imagenes/anna.png")
-```
+<img src="imagenes/anna.png" width="600" style="display: block; margin: auto;" />
 
 
 
@@ -869,16 +773,12 @@ class: center, middle
 **Postdoctoral Researcher**<br> 
 
 
-`r icon::fontawesome("twitter")` [@cantoflor_87]("http://twitter.com/cantoflor_87")<br>
-`r icon::fontawesome("link")` [florencia.netlify.app]("https://florencia.netlify.app/es-es/")
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> [@cantoflor_87]("http://twitter.com/cantoflor_87")<br>
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="height:1em;fill:currentColor;position:relative;display:inline-block;top:.1em;">  [ comment ]  <path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg> [florencia.netlify.app]("https://florencia.netlify.app/es-es/")
 ]
 
 .pull-right[ 
-```{r foto, echo = FALSE, out.width=250}
-knitr::include_graphics("https://res.cloudinary.com/flor/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1614343937/flor_pic_ceyztn.jpg")
-
-
-```
+<img src="https://res.cloudinary.com/flor/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max/v1614343937/flor_pic_ceyztn.jpg" width="250" />
 ]
 
 
