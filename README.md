@@ -1,7 +1,6 @@
 # Choose your own adventure to a reproducible scientific article: learnings from ReproHack
 
-## [Toronto Data Workshop on Reproducibility](https://rohanalexander.com/reproducibility.html#draft-schedule)
-#### *25-26 February 2021*
+####  [Toronto Data Workshop on Reproducibility](https://rohanalexander.com/reproducibility.html#draft-schedule) - 25-26 February 2021
 
 <!-- badges: start -->
 <!-- badges: end -->
