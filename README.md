@@ -7,7 +7,7 @@
 
 >"I shared the code and data of my last scientific article, does it mean that it is reproducible?"
 
-One might think that having access to the research data and the code used to analyze that data would be enough to reproduce published results, but often this is much more involved.
+We could think that having access to the research data and the code used to analyze that data would be enough to reproduce published results, but often this is much more involved.
 
 Is reproducibility dependent on the reviewer's knowledge?
 What things do we not usually think about can affect reproducibility?
