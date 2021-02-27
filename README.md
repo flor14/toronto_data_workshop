@@ -2,6 +2,7 @@
 #### [Toronto Data Workshop on Reproducibility](https://rohanalexander.com/reproducibility.html#draft-schedule) -  25-26 February 2021
 
 <!-- badges: start -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4568307.svg)](https://doi.org/10.5281/zenodo.4568307)
 <!-- badges: end -->
 
 >"I shared the code and data of my last scientific article, does it mean that it is reproducible?"
