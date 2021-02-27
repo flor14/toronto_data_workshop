@@ -153,7 +153,7 @@ knitr::include_graphics("imagenes/researchtools.jpg")
 ```
 ]
 
-.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
+.footnote[[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/) | [The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 
 ---
 
@@ -175,7 +175,7 @@ knitr::include_graphics("imagenes/researchtools.jpg")
 ]
 
 
-.footnote[[The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
+.footnote[[The Turing Way: A Handbook for Reproducible Data Science (2019)](https://the-turing-way.netlify.app/) | [The Turing Way Community, & Scriberia. (2020)](http://doi.org/10.5281/zenodo.3695300)]
 ---
 
 ## Reproducibility is consider a proof of **Research Quality**
@@ -184,7 +184,7 @@ knitr::include_graphics("imagenes/researchtools.jpg")
 ```{r cd, echo=FALSE, out.width=400, fig.align='center'}
 knitr::include_graphics("imagenes/codecheck.png")
 ```
-.footnote[[Codecheck Complete Article](https://www.nature.com/articles/d41586-020-02462-7)]
+.footnote[[Codecheck](https://codecheck.org.uk/)]
  ]
  
 .pull-down[
@@ -196,9 +196,7 @@ knitr::include_graphics("imagenes/codecheck2.png")
 
 ---
 
-class: middle, center
-
-## ¿Are we living a cultural **change**?
+## ¿Are we experiencing a cultural **change**?
 
 
 <blockquote class="twitter-tweet" data-lang="ens"><p lang="en" dir="ltr">The advert asks for: 
@@ -209,9 +207,8 @@ Have you come across job descriptions asking for such a commitment before?</p>&m
 
 ---
 
-class: middle, center
 
-## ¿Are we living a cultural **change**?
+## ¿Are we experiencing a cultural **change**?
 
 
 ```{r cultural_shift, echo = FALSE, out.width=700, fig.align='center'}
@@ -227,16 +224,11 @@ class: center, middle, inverse
 ## **ReproHack**
 Learning from the experience
 
-
 ```{r rhack, echo = FALSE, out.width=150}
 knitr::include_graphics("imagenes/reprohack.png")
 ```
 
-
-
-
 ---
-
 
 ## Hackathon
 
@@ -408,13 +400,13 @@ kableExtra::kbl(data.frame(Category = c("What", "Why", "How", "When", "Who", "Re
            col.names = c("Category", "Example section headings")) %>% 
    kable_minimal() %>% 
    kable_styling() %>% 
-  row_spec(3, bold = T, color = "white", background = "#D7261E") 
+  row_spec(3, bold = T, color = "white", background = "#6a0dad") 
 
 
 # knitr::include_graphics("imagenes/categorizing_readmes.png")
 ```
 
-.footnote[[Prana *et al.* (2019)](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas)]
+.footnote[[Table extracted from Prana *et al.* (2019)](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas)]
 
 
 ---
@@ -432,6 +424,7 @@ A clear and detailed description in the `README` of the files/links necessary to
 knitr::include_graphics("imagenes/estructura.png")
 ```
 
+.footnote[[README template `rrtools` package](https://github.com/benmarwick/rrtools)]
 
 ---
 
@@ -503,8 +496,6 @@ knitr::include_graphics("imagenes/ErrorManagement.jpg")
 ```{r sessioninfo, echo = FALSE, out.width=600, fig.align='center'}
 knitr::include_graphics("imagenes/sessioninfo.png")
 ```
-
-
 
 
 ---
@@ -785,11 +776,11 @@ background-size: cover
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 
-**README**
-
 * Cornell University - [Guide to writing "readme" style metadata](https://data.research.cornell.edu/content/readme) 
 
-* Prana, G.A.A., Treude, C., Thung, F. et al. (2019) [Categorizing the Content of GitHub README Files.](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas) Empir Software Eng 24, 1296–1327 https://doi.org/10.1007/s10664-018-9660-3
+* Hettrick, S., Antonioletti, M., Carr, L., Chue Hong, N., Crouch, S., De Roure, D., … Sufi, S. (2014). UK Research Software Survey 2014 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.14809
+
+* Jupyter Project, Bussonnier, M., Forde, J., Freeman, J., Granger, B., Head, T., ... & Willing, C. (2018, July). [Binder 2.0-Reproducible, interactive, sharable environments for science at scale](https://pdfs.semanticscholar.org/c043/bef741a9616d1144e0205ac21ceae881485d.pdf?_ga=2.134990321.1289472605.1614439362-796733345.1614439362). In Proceedings of the 17th python in science conference (Vol. 113, p. 120).
 
 ]
 
@@ -801,11 +792,9 @@ background-size: cover
 
 .bg-washed-green.b--dark-green.ba.bw2.br3.shadow-5.ph4.mt5[
 
-**Reproducible Research / Open Science**
-
-* Hettrick, S., Antonioletti, M., Carr, L., Chue Hong, N., Crouch, S., De Roure, D., … Sufi, S. (2014). UK Research Software Survey 2014 [Data set]. Zenodo. http://doi.org/10.5281/zenodo.14809
-
 * Marwick, B., Boettiger, C., & Mullen, L. (2018). [Packaging data analytical work reproducibly using R (and friends). The American Statistician 72(1), 80-88.](https://doi.org/10.1080/00031305.2017.1375986)
+
+* Prana, G.A.A., Treude, C., Thung, F. et al. (2019) [Categorizing the Content of GitHub README Files.](https://link.springer.com/article/10.1007/s10664-018-9660-3#citeas) Empir Software Eng 24, 1296–1327 https://doi.org/10.1007/s10664-018-9660-3
 
 * The Turing Way Community, Becky Arnold, Louise Bowler, Sarah Gibson, Patricia Herterich, Rosie Higman, … Kirstie Whitaker. (2019, March 25). [The Turing Way: A Handbook for Reproducible Data Science (Version v0.0.4). Zenodo. http://doi.org/10.5281/zenodo.3233986](https://the-turing-way.netlify.app/)
 
@@ -822,7 +811,7 @@ background-size: cover
 
 * [Improve your workflow for reproducible science - Mine Çetinkaya-Rundel](https://mine-cetinkaya-rundel.github.io/improve-repro-workflow-reproducibilitea-2020/slides/improve-repro-workflow-reproducibilitea-2020.pdf)
 
-* [How To Make Your Data Analysis Notebooks More Reproducible - Kartik Rham. RStudioConf::2019](https://rstudio.com/resources/rstudioconf-2019/a-guide-to-modern-reproducible-data-science-with-r-karthik-ram/) 
+* [How To Make Your Data Analysis Notebooks More Reproducible - Kartik Rham](https://rstudio.com/resources/rstudioconf-2019/a-guide-to-modern-reproducible-data-science-with-r-karthik-ram/) 
 
 * [Reproducible Environments - RStudio](https://environments.rstudio.com/)
 
